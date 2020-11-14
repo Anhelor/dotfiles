@@ -1,0 +1,2334 @@
+cd $ZDOTDIR
+ls
+sudo pacman -S exa
+clear
+ls
+neofetch
+mkdir plugins
+cd plugins
+git clone https://github.com/zdharma/fast-syntax-highlighting.git
+git clone https://github.com/skywind3000/z.lua.git
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+ls
+sudo pacman -S lua
+ls
+cd ..
+ls
+vim .zshrc
+ls
+clear
+ls
+neofetch
+cd .config/zsh
+ls
+cd plugins
+ls
+cd fast-syntax-highlighting
+l
+ls -lah
+cd ..
+vim ../.zshrc
+echo ${terminfo}
+echo ${terminfo[khome]}
+echo ${terminfo[kend]}
+ls
+clear
+ls
+neofetch
+clear
+ls
+cd $ZDOTDIR
+ls
+vim .zshrc
+cd 
+cd Github/Anhelor.github.io
+ls
+cd zsh/
+vim .zshrc
+cd $ZDOTDIR
+ls
+vim .zshrc
+cd $ZDOTDIR
+ls
+skdjfclear
+clear
+ls
+cd Github/Anhelor.github.io
+ls
+cd
+cd Github/Anhelor.github.io/zsh/
+ls
+vim .zshrc
+cd $ZDOTDIR
+vim .zshrc
+df
+l
+ls
+clear
+shutdown now
+su -
+systemctl status powertop.service
+cat /sys/bus/usb/devices/1-2/power/control
+cd
+su -
+sudo systemctl enable powertop.service
+su -
+ls
+sudo systemctl disable powertop.service
+sudo rm /etc/systemd/system/powertop.service
+sudo pacman -S tlp
+sudo pacman -S ethtool smartmontools x86_energy_perf_policy
+systemctl enable tlp.service
+sudo vim /etc/tlp.conf
+su -
+ls
+neofetch
+tlp-stat
+sudo tlp-stat > tlp.log
+vim tlp.log
+rm tlp.log
+yarn global add yrm
+ls
+cd $ZDOTDIR
+ls
+ls ~/.yarn/bin/yrm
+vim .zshrc
+yrm use taobao
+rm .npmrc
+yarn global add neovim prettier hex-cli
+yarn global add neovim prettier hex0-cli
+yarn global add neovim prettier hexo-cli
+clear
+vi
+cd .config
+mkdir nvim
+cd nvim
+ls
+touch init.vim
+vi
+sudo pacman -S proxychains-ng
+sudoedit /etc/proxychains.conf
+sh -c 'proxychains curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+sudoedit /etc/proxychains.conf
+sh -c 'proxychains curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+ls
+vi
+cd $XDG_DATA_HOME
+ls
+cd nvim/site/autoload
+ls
+vim plug.vim
+clear
+cd
+cd .config/nvim
+vim init.vim
+vi
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+vi
+vi init.vim
+vi init.vim
+ls ~/.config/fontconfig
+ln -sf /etc/fonts/conf.avail/10-nerd-font-symbols.conf ~/.config/fontconfig
+cd .config/nvim
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+sudo pacman -Ss llvm
+sudo pacman -S android-udev android-tools
+sudo pacman -S clang lld lldb llvm libc++ libc++abi
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+vi
+vi init.vim
+clear
+proxychains nvim
+vi
+vi
+vi init.vim
+c
+cd 
+cd .config/fontconfig
+ls
+vim fonts.conf
+vi fonts.conf
+vi fonts.conf
+sudo pacman -S tidy
+vi fonts.conf
+vi fonts.conf
+vi fonts.conf
+vi hello.c
+vi hello.cpp
+ls
+neofetch
+htop
+sudo pacman -S telegram-desktop
+clear
+cd Downloads/Telegram\ Desktop
+ls
+tar -xf Code.tar.gz
+ls
+mv Code ~/
+ls
+cd
+ls
+cd Code
+ls
+cd Homework/5th
+ls
+vi FirstWeek.cpp
+cd ~/.config/nvim
+ls
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+cd ~/Code
+ls
+cd Homework
+ls
+cd 5th
+vi FirstWeek.cpp
+clear
+cd
+z fontconfig
+ls
+vi fonts.conf
+neofetch
+cd .config
+cd nvim
+ls
+vi init.vim
+vi init.vim
+clear
+z 6th
+ls
+cd
+cd Code/Homework/6th
+ls
+vi BracketMatch.cpp
+cd ../5th
+ls
+vi FirstWeek.cpp
+ls
+vi makefile
+ls
+clear
+man clear
+clear
+htop
+clear
+ls
+neofetch
+su -
+clear
+ls
+neofetch
+neofetch
+clear
+ls
+htop
+Xorg --help
+echo \ufc62
+echo '\ufc62'
+echo '\uf9ca'
+cd .config/fontconfig
+ls
+rm 10-nerd-font-symbols.conf
+echo '\uf9ca'
+cd .config/fontconfig
+ln -sf /etc/fonts/conf.avail/10-nerd-font-symbols.conf ~/.config/fontconfig
+echo '\uf9ca'
+vi 10-nerd-font-symbols.conf
+echo '\ufc62'
+echo '\ufc62'
+echo '\uf0d4'
+echo '\uf445'
+echo '\uf0c8'
+sudo pacman -S wps-office wps-office-mui-zh-cn ttf-wps-fonts
+htop
+cd Code/Homework
+ls
+mkdir 8th
+cd 8th
+ls
+vi ../5th/FirstWeek.cpp
+cp ../5th/FirstWeek.cpp ./
+vi FirstWeek.cpp 
+clang++ FirstWeek.cpp
+./a.out
+clear
+ls
+mv FirstWeek.cpp K.cpp
+cp ../5th/FirstWeek.cpp ./
+mv FirstWeek.cpp Reverse.cpp
+vi Reverse.cpp
+vi Reverse.cpp
+vi K.cpp
+clang++ Reverse.cpp
+vi K.cpp
+vi K.cpp
+vi Reverse.cpp
+clang++ Reverse.cpp
+./a.out
+clear
+ls
+ls
+vi Maze.cpp
+ls
+cp ../6th/Stack.cpp ./
+cp ../6th/BracketMatch.cpp
+cp ../6th/BracketMatch.cpp ./
+ls
+rm Stack.cpp
+vi BracketMatch.cpp
+mv BracketMatch.cpp Maze.cpp
+ls
+vi Maze.cpp
+vi Maze.cpp
+vi Reverse.cpp
+clang++ Reverse.cpp
+./a.out
+vi Reverse.cpp
+vi Reverse.cpp
+clang++ Reverse.cpp
+./a.out
+vi Reverse.cpp
+vi Reverse.cpp
+clang++ Reverse.cpp
+./a.out
+vi Reverse.cpp
+clear
+vi K.cpp
+clang++ K.cpp
+./a.out
+clear
+ls
+vi Maze.cpp
+vi Maze.db
+vi Maze.db
+vi Maze.db
+vi Maze.cpp
+vi Maze.db
+vi Maze.cpp
+vi Maze.db
+vi Maze.cpp
+vi Maze.cpp
+vi Maze.db
+vi Maze.db
+vi Maze.cpp
+clang++ Maze.cpp
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp
+./a.out
+echo '\uf0c8'
+clear
+./a.out
+vi Maze.cpp
+ls
+vi Maze.cpp
+cat Maze.cpp
+clear
+vi Maze.cpp
+./a.out
+vi Maze.cpp
+su -
+systemctl hibernate
+yay -Syu
+ls
+vim $ZDOTDIR/.zshrc
+vi .pam_environment
+vim $ZDOTDIR/.zshrc
+vi $ZDOTDIR/.zshrc
+vi .pam_environment
+htop
+clear
+man memcpy
+ls
+neofetch
+echo '\uf0c8'
+clear
+cd Code/Homework/8th
+ls
+vi Maze.cpp
+clang++ Maze.cpp
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+lldb a.out
+vi Maze.cpp
+lldb a.out
+vi Maze.cpp
+vi Maze.cpp
+clang++ Maze.cpp -g
+lldb a.out
+lldb a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+lldb a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+lldb a.out
+clang++ Maze.cpp -g
+vi Maze.cpp
+lldb a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+lldb a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+lldb a.out
+vi Maze.cpp
+lldb a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+./a.out > test
+vi test
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out > test
+vi test
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out > test
+vi test
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out > test
+vi Maze.cpp
+vi test
+vi Maze.cpp
+co
+clang++ Maze.cpp -g
+./a.out > test
+vi Maze.cpp
+vi test
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out > test
+vi test
+vi Maze.cpp
+clang++ Maze.cpp -g
+lldb a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out > test
+vi test
+vi Maze.cpp
+lldb a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out > test
+vi test
+vi test
+vi Maze.cpp
+clang++ Maze.cpp -g
+lldb a.out
+vi Maze.cpp
+lldb a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out > test
+vi test
+./a.out > test
+vi test
+vi Maze.cpp
+vi test
+vi Maze.cpp
+vi Maze.cpp
+lldb a.out
+vi Maze.cpp
+./a.out
+lldb a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out > test
+vi test
+vi Maze.cpp
+lldb a.out
+vi Maze.cpp
+vi Maze.cpp]
+vi Maze.cpp
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out > test
+vi test
+rm test
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+vi Maze.cpp
+clang++ Maze.cpp -g
+vi Maze.cpp
+clang++ Maze.cpp -g
+vi Maze.cpp
+clang++ Maze.cpp -g
+vi Maze.cpp
+clang++ Maze.cpp -g
+vi Maze.cpp
+clang++ Maze.cpp -g
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+vi Maze.cpp
+vi Maze.cpp
+vi Maze.cpp
+clear
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+clear
+vi Maze.cpp
+./a.out
+vi Maze.cpp
+clear
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+vi Maze.cpp
+clear
+./a.out
+l
+vi Maze.cpp
+clear
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+clear
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+htop
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+clang++ Maze.cpp -g
+./a.out
+vi Maze.cpp
+ls
+vi
+vi
+vi
+vi
+vi Maze.cpp
+htop
+cd Code/Homework/8th
+ls
+vi Maze.cpp
+neofetch
+htop
+cd Downloads/test2
+ls
+vi test.txt
+cd Do
+cd Downloads
+ls
+sudo pacman -S 
+sudo pacman -S unzip
+unzip çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ.zip
+ls
+rm -rf $'\244'$'\257'$'\360'È¦$'\335'+$'\244'+$'\267'$'\246'$'\324'-$'\310'1
+ls
+unzip çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ.zip
+cd $'\244'$'\257'$'\360'È¦$'\335'+$'\244'+$'\267'$'\246'$'\324'-$'\310'1
+ls
+cd $'\244'$'\257'$'\360'È¦$'\335'+$'\244'+$'\267'$'\246'$'\324'-$'\310'1
+ls
+cd ../..
+ls
+rm -rf $'\244'$'\257'$'\360'È¦$'\335'+$'\244'+$'\267'$'\246'$'\324'-$'\310'1
+sudo pacman -S unzip-iconv
+unzip çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ.zip
+rm -rf $'\317'$'\337'$'\320'Ô±$'\355'$'\311'Ï»$'\372'$'\262'$'\342'$'\312'$'\324'1
+unzip -O cp936 çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ.zip
+cd çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ1/çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ1
+ls
+cd 
+ls
+clear
+ls
+cd Downloads
+ls
+cd çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ1
+l
+cd çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ1
+ls
+cd ..
+ls
+cd ..
+ls
+cd çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ1/çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ1
+ls
+vi çº¿æ€§èƒ¨æµƒ«è¯ƒµ1.cpp
+z nvim
+ls
+vi init.vim
+cd -
+vi çº¿æ€§èƒ¨æµƒ«è¯ƒµ1.cpp
+vim çº¿æ€§èƒ¨æµƒ«è¯ƒµ1.cpp
+vi çº¿æ€§èƒ¨æµƒ«è¯ƒµ1.cpp
+gedit çº¿æ€§èƒ¨æµƒ«è¯ƒµ1.cpp
+vim fuck.cpp
+vi fuck.cpp
+vi fuck.cpp
+vi fuck.cpp
+cd ../..
+ls
+vi fuck.cpp
+cd çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ1/çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ1
+vi fo
+vi fuck.cpp
+clear
+ls
+cd 
+cd Downloads
+ls
+sudo pacman -S rar
+sudo pacman -S unrar
+unrar e çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ2.rar
+ls
+mkdir test2
+mv ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ2.doc çº¿æ€§èƒ¨æµƒ«è¯ƒµ2.cpp test2
+cd test2
+ls
+celar
+clear
+ls
+gedit çº¿æ€§èƒ¨æµƒ«è¯ƒµ2.cpp
+vi fuck.cpp
+vi test.txt
+vi Move.cpp
+clang++ Move.cpp
+./a.out
+./a.out
+vi Move.cpp
+clang++ Move.cpp
+./a.out
+./a.out
+vi Move.cpp
+clang++ Move.cpp
+./a.out
+vi Sum.cpp
+vi Move.cpp
+cp Move.cpp Sum.cpp
+vi Sum.cpp
+clang++ Sum.cpp
+./a.out
+vi Sum.cpp
+clang++ Sum.cpp
+./a.out
+vi Sum.cpp
+clang++ Sum.cpp
+./a.out
+./a.out
+vi Sum.cpp
+clang++ Sum.cpp
+./a.out
+vi Sum.cpp
+ls
+vi fuck.cpp
+vi Move.cpp
+vi fuck.cpp
+clang fuck.cpp
+vi fuck.cpp
+clang fuck.cpp
+g++ fuck.cpp
+clang++ fuck.cpp
+clear
+./a.out
+./a.out
+vi fuck.cpp
+clang++ fuck.cpp
+./a.out
+./a.out
+./a.out
+./a.out
+vi fuck.cpp
+clang++ fuck.cpp
+./a.out
+vi fuck.cpp
+clang++ fuck.cpp
+./a.out
+./a.out
+vi fuck.cpp
+./a.out
+vi fuck.cpp
+clang++ fuck.cpp
+./a.out
+vi fuck.cpp
+clang++ fuck.cpp
+clear
+./a.out
+vi fuck.cpp
+clear
+clang++ fuck.cpp
+./a.out
+vi fuck.cpp
+clear
+./a.out
+./a.out
+vi fuck.cpp
+clang++ fuck.cpp
+./a.out
+./a.out
+./a.out
+vi fuck.cpp
+wl-copy < fuck.cpp
+mv fuck.cpp çº¿æ€§èƒ¨æµƒ«è¯ƒµ2.cpp 
+ls
+ls
+ls
+ls
+vi test.txt
+mv Move.cpp 3.cpp
+mv Sum.cpp 4.cpp
+ls
+wl-copy < 3.cpp
+wl-copy <4.cpp
+wl-copy < çº¿æ€§èƒ¨æµƒ«è¯ƒµ2.cpp
+clear
+ls
+cd .config/zsh
+ls
+vi .zcompdump
+l
+vi .zcompdump
+cd Downloads/test2
+ls
+vi çº¿æ€§èƒ¨æµƒ«è¯ƒµ2.cpp
+cd ..
+ls
+cd ..
+ls
+cd Downloads
+ls
+ls
+tar -xzvpf æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨.tar.gz
+ls
+cd æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨
+ls
+vi 5.cpp
+./a.out
+vi 5.cpp
+g++ 5.cpp
+./a.out
+vi 5.cpp
+g++ 5.cpp
+./a.out
+vi 5.cpp
+g++ 5.cpp
+./a.out
+vi 5.cpp
+ls
+clear
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+vi 3.cpp
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+g++ 3.cpp
+./a.out
+vi 3.cpp
+vi 1-2.txt
+vi 4.cpp
+gedit 3.cpp
+vi 4.cpp
+g++ 4.cpp
+./a.out
+vi 4.cpp
+vi 5.cpp
+g++ 5.cpp
+./a.out
+vi 5.cpp
+g++ 5.cpp
+./a.out
+cd ..
+zip --help
+man zip
+zip æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨.zip æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨
+ls
+rm çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ1
+zip æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨ æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨.zip
+zip æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨
+zip æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨.zip æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨
+cd ..
+cp Downloads/æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨.zip ./
+ls
+unzip æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨.zip
+ls
+cd æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨
+ls
+l
+cd ..
+rm -f æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨ æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨.zip
+rm -f æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨ æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨.zip -r
+yay -Syu
+sudo pacman -R epiphany
+pacman -Qtdq | sudo pacman -Rns -
+clear
+pacman -Qtdq
+pidof clash
+pacman -Ss power
+pacman -Ss powerstat
+clear
+ls
+pacman -Ss zsh
+clear
+ls
+yay -Ss powertop
+man powertop
+yay -Ss powerstat
+df
+yay -Ps
+clear
+ls
+neofetch
+neofetch
+pacman -Ss wechat
+sudo pacman -S wine-wechat wine-for-wechat
+sudo vim /etc/pacman.conf
+sudo pacman -Syy wine-wechat wine-for-wechat
+cd .local/lib/wine-wechat
+ls
+cd default
+ls
+clear
+sudo pacman -R wine-wechat wine-for-wechat
+sudo pacman -Rns wine-wechat wine-for-wechat
+pacman -Qtdq
+clear
+rm .bash*
+ls
+l
+cd .local
+l lib
+rm -rf lib
+cd share
+ls
+cd TabNine
+ls
+cd models
+l
+cd
+cd .config
+l
+cd TabNine
+l
+cd monitoring
+l
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd .cache
+l
+cd
+ls
+clear
+ls
+l
+htop
+cd .local
+ls
+cd share
+l
+cd
+clear
+ls
+sudo pacman -Ss background
+sudo vim /etc/pacman.conf
+sudo pacman -S gnome-shell-extensions
+htop
+ls /boot
+l /boot
+l /boot
+l /boot
+sudo vim /etc/mkinitcpio.conf
+sudo vim /etc/modules-load.d/acpi_call.conf
+sudo rm /etc/modules-load.d/acpi_call.conf
+sudo vim /etc/modprobe.d/80-nvidia.conf
+sudo pacman -S nvidia nvidia-utils opencl-nvidia nvidia-prime nvidia-settings
+sudo pacman -Sy nvidia nvidia-utils opencl-nvidia nvidia-prime nvidia-settings
+sudo vim /etc/default/grub
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+cat /proc/driver/nvidia/gpus/0000:01:00.0/information
+cat /proc/driver/nvidia/gpus/0000:01:00.0/power
+nvidia-smi
+su -
+sudo vim /etc/default/grub
+su -
+neofetch
+systemd-analyze
+nvidia-smi
+sudo vim /etc/default/grub
+sudo pacman -R nvidia nvidia-prime nvidia-settings nvidia-utils opencl-nvidia
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo rm /etc/modprobe.d/80-nvidia.conf
+sudo pacman -Sy nvidia nvidia-utils opencl-nvidia nvidia-prime nvidia-settings
+lspci
+sudo vim /etc/default/grub
+sudo vim /etc/modprobe.d/80-nvidia.conf
+sudo vim /etc/modprobe.d/80-nvidia.conf
+vim /usr/share/doc/nvidia/html/dynamicpowermanagement.html
+sudo vim /etc/modprobe.d/80-nvidia.conf
+sudo vim /usr/share/doc/nvidia/html/dynamicpowermanagement.html
+sudo vim /etc/modprobe.d/80-nvidia.conf
+sudo vim /lib/udev/rules.d/80-nvidia-pm.rules
+sudo vim /etc/tlp.conf
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+cat /proc/driver/nvidia/gpus/0000:01:00.0/power
+cat /proc/driver/nvidia/gpus/0000:01:00.0/information
+clear
+nvidia-smi
+clear
+neofetch
+clear
+ls
+neofetch
+clear
+htop
+su -
+su -
+clear
+ls
+nvidia-smi
+nvidia-smi
+cat /proc/driver/nvidia/gpus/0000:01:00.0/information
+cat /proc/driver/nvidia/gpus/0000:01:00.0/power
+CLEAR
+su -
+lsmod | grep intel
+lsmod | grep intel_agp
+lsmod | grep ^intel
+yay -Syu
+cat /sys/bus/pci/devices/0000:00:01.0/power/control
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+dmesg
+nvidia-smi
+nvidia-smi | grep -i nvidia
+dmesg | grep -i nvidia
+clear
+neofetch
+htop
+clear
+ls
+nvidia-smi
+sudo vim /etc/tlp.conf
+sudo vim /etc/mkinitcpio.conf
+sudo vim /lib/udev/rules.d/80-nvidia-pm.rules
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo modinfo nvidia-drm
+yay -Syu
+sudo modinfo nvidia-drm
+man modinfo
+sudo modinfo -p nvidia-drm
+nvidia-smi
+clear
+clear
+ls
+neofetch
+clear
+ls
+neofetch
+cd /usr/share/doc/nvidia
+ls
+cd html
+ls
+grep -lR * kms
+grep -lR kms *
+vim index.html
+vim index.html
+vim kms.html
+chromium kms.html
+cd
+clear
+ls
+sudo vim /etc/default/grub
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+nvidia-smi
+nvidia-smi
+su -
+nvidia-smi
+nvidia-smi
+nvidia-smi
+vi
+z nvim
+ls
+vi init.vim
+vi
+vi
+z 8th
+ls
+vi Maze.cpp
+htop
+sudo pacman -Si chromium
+sudo pacman -S pepper-flash
+z nvim
+ls
+vi init.vim
+vi
+vi init.vim
+vi init.vim
+vi init.vim
+vi init.vim
+z 8th
+ls
+vi Maze.cpp
+vi Reverse.cpp
+clear
+ls
+neofetch
+clear
+htop
+neofetch
+vi
+vi
+z nvim
+vi init.vim
+vi
+z 8th
+vi Maze.cpp
+vi Maze.cpp
+z nvim
+ls
+vi init.vim
+vi init.vim
+z 8th
+ls
+vi Maze.cpp
+z nvim
+ls
+vi init.vim
+vi init.vim
+vi init.vim
+z 8th
+vi Maze.cpp
+z nvim
+ls
+vi init.vim
+vi init.vim
+vi init.vim
+z 8th
+vi Reverse.cpp
+vi K.cpp
+z nvim
+vi init.vim
+z 8th
+vi Maze.cpp
+clear
+neofetch
+z nvim
+ls
+vi init.vim
+vi
+vi
+vi init.vim
+vi
+z 8th
+vi Maze.cpp
+z 8th
+ls
+z nvim
+ls
+vi init.vim
+vi init.vim
+vi init.vim
+z 8th
+ls
+vi Maze.cpp
+yay -Syu
+sudo pacman -R nvidia
+sudo pacman -S linux-zen linux-zen-headers nvidia-dkms
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+neofetch
+systemd-analyze
+dmesg > dmesg.log
+vi dmesg.log
+sudo journalctl -p 3 0xb
+sudo journalctl -p 3 -xb
+clear
+nvidia-smi
+clear
+ls
+neofetch
+vi dmesg.log
+lsmod | grep agp
+lsmod | grep kms
+ls
+rm dmesg.log
+lsmod | wc -l
+clear
+ls
+neofetch
+clear
+ls
+ls
+clea
+rl
+clear
+zcat /proc/config.gz | grep -i nvidia
+zcat /proc/config.gz | grep -iE 'nvidia|nouveau'
+zcat /proc/config.gz | grep -iE 'nvidia|nouveau|drm'
+zcat /proc/config.gz | grep -iE 'nvidia|nouveau'
+zcat /proc/config.gz | grep -i nvidia
+lsmod | grep -i nvidia
+sudo journalctl -p 3 -xb
+clear
+ls
+neofetch
+pacman -Qtdq
+clear
+nvidia-smi
+systemd-analyze
+systemctl hibernate
+systemd-analyze blame
+nvidia-smi
+clear
+pidof clash
+sudo systemctl enable fstrim.timer
+cat /sys/block/nvme0n1/queue/scheduler
+dmesg | grep BFS
+dmesg | grep Mu
+dmesg | grep -i mu
+systemctl edit gdm.service
+cd /etc/systemd/system/
+ls
+vi display-manager.service
+l
+cd getty.target.wants
+ls
+cd ..
+ls
+cd timers.target.wants
+ls
+cd ..
+ls
+clear
+ls
+cd sysinit.target.wants
+l
+cd ..
+l
+htop
+htop
+neofetch
+nvidia-smi
+clear
+ls
+cd /vat
+cd /vat
+cd /var
+ls
+cd cache
+ls
+cd fontconfig
+ls
+cd ..
+ls
+cd ..
+ls
+cd log
+ls
+vi lastlog
+ls
+vi pacman.log
+clear
+cd
+systemctl hibernate
+yay -Syu
+neofetch
+htop
+ls
+neof
+su -
+adb devices
+ls
+adb pull /sdcard/Music/ Music
+ls
+cd Music
+ls
+mv Music/* ./
+ls
+rmdir Music
+rm -rf Music
+pacman -Ss pulseeffects
+ls
+z 8th
+ls
+clear
+ls
+vi Maze.cpp
+clang++ Maze.cpp
+ls
+clear
+./a.out
+htop
+clear
+./a.out
+clear
+sudo vim /etc/tlp.conf
+sudo pacman -R nvidia-dkms nvidia-prime nvidia-settings nvidia-utils opencl-nvidia
+su -
+sudo vim /etc/default/grub
+sudo vim /etc/mkinitcpio.conf
+sudo rm /lib/udev/rules.d/80-nvidia-pm.rules
+ls
+sudo rm /etc/udev/rules.d/61-gdm.rules
+sudo rm /etc/modprobe.d/80-nvidia.conf
+clear
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+lsmod | grep kms
+clear
+clear
+systemd-analyze 
+clear
+neofetch
+clear
+systemctl hibernate
+yay -Syu
+cd /usr/lib
+ls
+cd modules
+ls
+cd 5.9.8-arch1-1
+l
+cd
+l /boot
+systemd-analyze 
+ls
+adb devices
+cd Downloads
+ls
+adb pull /sdcard/OnePlus7ProOxygen_21.E.30_OTA_030_all_2010111747_678eb7e6b47.zip ./
+cd
+cd Github
+ls
+mkdir aur
+cd aur
+yay -Ss qt5-style
+pacman -S qt5-wayland
+sudo pacman -S qt5-wayland
+cd
+vi .pam_environment
+z aur
+ls
+yay -Si aur/qt5-styleplugins
+git clone https://aur.archlinux.org/packages/qt5-styleplugins.git
+git clone https://aur.archlinux.org/qt5-styleplugins.git
+cd qt5-styleplugins
+ls
+makepkg -si
+ls
+pacman -Ql qt5-styleplugins
+vi .pam_environment
+pidof clash
+kill 1784
+cd Downloads
+ls
+adb reboot bootloader
+fastboot boot twrp-3.4.0-0-guacamole-unified-Q-mauronofrio.img
+neofetch
+ls
+cd test2
+ls
+cd ..
+ls
+rm -rf æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨.tar.gz æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨.zip çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ.zip çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ2.rar
+ls
+rm -rf çº¿æ€§èƒ¨ä¸ƒªæƒ¼ºæµƒ«è¯ƒµ1
+ls
+mv test2 DataTypeTest-jyp
+mv æƒµ°æƒ­®ç»ƒ³æƒ¾ƒ¤è€ƒ£è¯ƒµ-é«ƒ¸ä½³æƒ¹¨ DataTypeTest-gjc
+ls
+mkdir Phone
+mv OnePlus7ProOxygen_21.E.30_OTA_030_all_2010111747_678eb7e6b47.zip twrp-3.4.0-0-guacamole-unified-installer-mauronofrio.zip twrp-3.4.0-0-guacamole-unified-Q-mauronofrio.img Phone
+ls
+clear
+ls
+cd
+ls
+vi .pam_environment
+cd .cache/mozilla
+cd ../zsh
+cd
+l
+echo $ZSH_CACHE_DIR
+cd .cache
+ls
+cd cache
+ls
+l
+cd
+vi .pam_environment
+vi .pam_environment
+cd .cache
+ls
+mv cache zsh
+ls
+cd Downloads
+ls
+cd Phone
+fastboot boot twrp-3.4.0-0-guacamole-unified-Q-mauronofrio.img
+cd
+vi .pam_environment
+cd $ZSH_CACHE_DIR
+ls
+vi .zlua
+cd
+pidof clash
+systemd-analyze 
+systemctl hibernate
+yay -Syyu
+yay -Fyy
+vi
+clea
+clear
+neofetch
+vi
+z nvim
+ls
+vi init.vim
+vi
+vi
+vi
+vi init.vim
+sudo pacman -S typora
+htop
+htop
+yay -Ps
+pacman -Fl llvm
+l /opt
+clear
+sudo pacman -S mlocate
+sudo updatedb
+locate zsh
+cd .local/share
+ls
+cd yarn/global/node_modules/hexo-cli/completion
+ls
+vi zsh
+ls
+vi README.md
+cd
+cd $ZDOTDIR
+ls
+vi .zshrc
+hexo version
+hexo help
+clear
+cd $ZDOTDIR
+vi .zshrc
+htop
+sudo journalctl -p 3 -xb
+clear
+neofetch
+uname -r
+uname -a
+dmesg > dmesg.log
+vi dmesg.log
+sudo vim /etc/default/grub
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+dmesg > dmesg.log
+vi dmesg.log
+dmesg > dmesg.log
+vi dmesg.log
+rm dmesg.log
+ls
+neofetch
+clear
+su -
+ls
+neofetch
+clear
+htop
+systemctl hibernate
+yay -Syu
+systemctl hibernate
+yay -Syu
+neofetch
+pidof clash
+vi
+clear
+neofetch
+cd Downloads
+ls
+mkdir C++PrimerSourceFiles
+ls
+cd C++PrimerSourceFiles
+ls
+mv ../GCC_4_7_0.zip
+mv ../GCC_4_7_0.zip .
+ls
+unzip GCC_4_7_0.zip
+ls
+cd 1
+ls
+vi Sales_item.h
+ls
+cd ..
+ls
+cd ..
+ls
+mv C++PrimerSourceFiles ~/Code
+ls
+cd
+cd Code/C++Primer
+ls
+cd Chapter_1
+ls
+cp ../../C++PrimerSourceFiles/1/Sales_item.h ./
+ls
+vi 1.25.cpp
+clang++ 1.25.cpp
+vi 1.25.cpp
+ls
+vi
+cd 
+cd .config/coc/extensions
+ls
+cd coc-tabnine-data
+ls
+cd binaries/3.1.21/x86_64-unknown-linux-musl
+ls
+l
+cd
+cd Code/C++Primer
+ls
+mkdir Chapter_2
+cd Chapter_
+cd Chapter_2
+ls
+clear
+ls
+vi 2.4.cpp
+clang++ 2.4.cpp 
+./a.out
+clear
+ls
+timedatectl status
+systemctl hibernate
+htop
+htop
+yay -Ss netease
+sudo pacman -R electron-netease-cloud-music
+sudo pacman -S iease-music
+sudo pacman -R iease-music
+su -
+sudo pacman -S netease-cloud-music-gtk
+yay -Ss qqmusic
+pacman -Ss feeluown
+sudo pacman -S feeluown-full
+sudo pacman -R netease-cloud-music-gtk
+su -
+pacman -Ss migu
+sudo pacman -S ttf-migu
+fc-list| grep -i migu
+z fontconfig
+vi fonts.conf
+ls
+neofetch
+clear
+ls
+neofetch
+cd Code/C++Primer/Chapter_2
+ls
+vi 2.4.cpp
+vi
+clear
+neofetch
+pidof clash
+sudo pacman -Syu
+pacman -Ss font
+ls
+yay -Ss win10
+sudo pacman -S  ntfs-3g
+z aur
+ls
+git clone https://aur.archlinux.org/ttf-ms-win10.git
+clear
+ls
+cd ttf-ms-win10
+ls
+vi PKGBUILD
+vi PKGBUILD
+cp ~/Downloads/license.rtf ./
+cp ~/Downloads/Fonts/*.ttf ./
+cp ~/Downloads/Fonts/*.TTF ./
+l
+sudo pacman -S pacman-contrib
+z aur
+cd ttf-ms-win10
+ls
+updpkgsums
+cp ~/Downloads/Fonts/*.ttc ./
+updpkgsums
+makepkg -si
+sudo pacman -U ttf-ms-win10-10.0.18362.116-2-any.pkg.tar.zst ttf-ms-win10-zh_cn-10.0.18362.116-2-any.pkg.tar.zst
+clear
+fc-list| grep -i micro
+z fontconfig
+vi fonts.conf
+neofetch
+zcat /proc/config.gz | grep -i muqss
+zcat /proc/config.gz | grep -i hz
+zcat /proc/config.gz | grep -i io
+zcat /proc/config.gz | grep -i bbr
+sysctl net.ipv4.tcp_congestion_control
+clear
+ls
+z aur
+ls
+cd ..
+ls
+git clone https://aur.archlinux.org/linux-xanmod.org
+git clone https://aur.archlinux.org/linux-xanmod.git
+ls
+rmdir linux-xanmod.org
+rm -rf linux-xanmod.org
+cd linux-xanmod
+ls
+vi PKGBUILD
+cd ..
+ls
+git clone https://aur.archlinux.org/modprobed-db.git
+clear
+ls
+cd modprobed-db
+ls
+makepkg -si
+man modprobed-db
+systemctl --user enable --now modprobed-db.service
+modprobed-db
+cd .config
+vi modprobed.db
+clear
+z aur
+ls
+cd linux-xanmod
+ls
+vi PKGBUILD
+htop
+l /boot
+z aur
+cd linux-xanmod
+env _microarchitecture=42 use_ns=n MAKEFLAGS=-j13 makepkg -s
+wget https://mirrors.bfsu.edu.cn/kernel/v5.x/linux-5.9.xz 
+wget https://mirrors.bfsu.edu.cn/kernel/v5.x/linux-5.9.tar.xz 
+env _microarchitecture=42 use_ns=n MAKEFLAGS=-j13 makepkg -s
+gpg --keyserver hkps://keyserver.ubuntu.com:443 --receive-keys 38DBBDC86092693E
+env _microarchitecture=42 use_ns=n MAKEFLAGS=-j13 makepkg -s
+l
+sudo pacman -U linux-xanmod-5.9.8-1-x86_64.pkg.tar.zst linux-xanmod-headers-5.9.8-1-x86_64.pkg.tar.zst
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+neofetch
+neofetch
+systemd-analyze 
+zcat /proc/config.gz | grep -i bbr
+zcat /proc/config.gz | grep -i muqss
+zcat /proc/config.gz | grep -i cachy
+zcat /proc/config.gz | grep -i cac
+zcat /proc/config.gz | grep -i hz
+clear
+ls
+ls
+neofetch
+systemd-analyze 
+htop
+sudo journalctl -p 3 -xb
+clear
+ls
+modprobed-db
+modprobed-db list
+clear
+ls
+neofetch
+sysctl net.ipv4.tcp_congestion_control
+z xanmod
+ls
+rm -rf linux-xanmod-5.9.8-1-x86_64.pkg.tar.zst linux-xanmod-headers-5.9.8-1-x86_64.pkg.tar.zst src/linux-5.9 
+l
+rm -rf pkg src 
+rm config.last
+ls
+vi PKGBUILD
+env _microarchitecture=42 use_ns=n localmodcfg=y MAKEFLAGS=-j13 makepkg -s
+ls
+rm -rf pkg src config.last 
+env _microarchitecture=42 use_ns=n _localmodcfg=y MAKEFLAGS=-j13 makepkg -s
+l
+sudo pacman -U linux-xanmod-5.9.8-1-x86_64.pkg.tar.zst linux-xanmod-headers-5.9.8-1-x86_64.pkg.tar.zst
+sudo pacman -U linux-xanmod-5.9.8-1-x86_64.pkg.tar.zst linux-xanmod-headers-5.9.8-1-x86_64.pkg.tar.zst
+su -
+modprobed-db 
+clear
+ls
+cd 
+cd
+sudo journalctl -p 3 -xb
+ls
+clear
+ls
+zcat /proc/config.gz | grep -i bbr
+zcat /proc/config.gz | grep -i nouveau
+lsmod | grep kms
+lsmod | grep nvidia
+su -
+sudo pacman -R linux-xanmod linux-xanmod-headers linux-headers linux-zen linux-zen-headers
+yay -Sc
+df
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+ls
+su -
+modprobed-db 
+sudo journalctl -p 3 -xb
+ls
+sudo pacman -R ttf-ms-win10 ttf-ms-win10-zh_cn
+ls
+z aur
+ls
+cd ..
+ls
+rm -rf linux-xanmod 
+cd ttf-ms-win10
+ls
+sudo pacman -U ttf-ms-win10-10.0.18362.116-2-any.pkg.tar.zst
+sudo pacman -R ttf-ms-win10 
+fc-list| grep -i micro
+sudo pacman -R ttf-ms-win10 
+clear
+ls
+yay -Ss times
+yay -Ss times | grep -B1 font
+z aur
+git clone https://aur.archlinux.org/ttf-times-new-roman.git
+cd ttf-times-new-roman
+ls
+vi PKGBUILD
+makepkg -si
+fc-list| grep -i times
+yay -Syu
+yay -Qs
+yay -Qd
+yay -Qd
+yay -Qm
+modprobed-db 
+modprobed-db list
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+cd /etc/fonts/conf.avail
+l
+cd ../conf.d
+l
+ls | grep -i noto
+yay -Ss noto
+sudo pacman -S noto-fonts-extra
+pacman -Si noto-fonts
+pacman -Si noto-fonts-cjk
+sudo pacman -R noto-fonts-extra noto-fonts 
+sudo pacman -S noto-fonts-emoji-blob
+sudo pacman -R noto-fonts-emoji
+sudo pacman -S noto-fonts-emoji
+sudo pacman -R noto-fonts-emoji-blob
+fc-cache -frv
+fc-list| grep -i term
+yay -Ss sarasa
+z fontconfig
+ls
+vi fonts.conf
+ls
+neofetch
+echo '=>'
+echo '!="
+echo '!='
+ls
+neofetch
+z fontconfig
+ls
+pacman -Ss m1
+pacman -Ss migu
+fc-list| grep -i migu
+vi fonts.conf
+le
+ls
+neofetch
+ls
+neofetch
+neofetch
+neofetch
+yay -Syu
+yay -Syyu
+yay -Ss wezterm
+z aur
+ls
+git clone https://aur.archlinux.org/wezterm-bin.git
+cd wezterm-bin
+ls
+vi PKGBUILD
+ls
+cd ..
+git clone https://aur.archlinux.org/wezterm-git.git
+vi PKGBUILD
+cd wezterm-git
+ls
+vi PKGBUILD
+ls
+cd ..
+ls
+rm -rf wezterm-git
+ls
+cd wezterm-bin
+ls
+makepkg -si
+ls
+rm wezterm.part
+mv ~/Downloads/WezTerm-20201101-103216-403d002d-Ubuntu16.04.AppImage ./
+ls
+makepkg -si
+ls
+rm wezterm.part
+vi PKGBUILD
+mv WezTerm-20201101-103216-403d002d-Ubuntu16.04.AppImage wezterm
+makepkg -si
+ls
+vi PKGBUILD
+rm wezterm
+proxychains makepkg -si
+ls
+updpkgsums
+makepkg -si
+sudo intel_gpu_top
+clear
+ls
+sudo pacman -R wezterm-bin
+pacman -Ss wezterm
+pacman -Ss terminal
+sudo pacman -S alacritty-git
+ls
+neofetch
+clear
+neofetch
+htop
+ls
+neofetch
+alacritty
+sudo pacman -R alacritty-git
+pacman -Ss terminal
+pacman -Si termite
+sudo pacman -S termite
+ls
+neofetch
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+cd .config
+mkdir termite
+cp /etc/xdg/termite/config ~/.config/termite/config
+ls
+cd termite
+ls
+vi config
+vi config
+ls
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+ls
+neofetch
+ls
+clear
+ls
+neofetch
+cd .config/termite
+ls
+vi config
+neofetch
+sudo pacman -R termite
+su -
+cd .config
+rm -rf termite
+man git
+cd aur
+z aur
+ls
+sudo pacman -S asp
+asp checkout linux
+cd linux
+ls
+cd repos/core-x86_64
+ls
+makepkg -si
+vi PKGBUILD
+cat PKGBUILD
+ls
+ls
+vi ~/.gitconfig
+makepkg -si
+ls
+git clone https://git.archlinux.org/linux.git --depth 1
+cd linux
+ls
+cd ..
+ls
+rm -rf src 
+ls
+mv linux archlinux-linux
+makepkg -si
+vi PKGBUILD
+ls
+rm archlinux-linux
+rm archlinux-linux -rf
+git clone https://git.archlinux.org/linux.git?signed#tag=v5.9.8-arch1 --depth=1
+git clone "https://git.archlinux.org/linux.git?signed#tag=v5.9.8-arch1" --depth=1
+l
+cd ../..
+ls
+cd. .
+cd ..
+ls
+rm -rf linux 
+rm -rf ttf-ms-win10 wezterm-bin 
+clear
+ls
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+clear
+ls
+neofetch
+sudo journalctl -p 3 -xb
+clear
+systemctl hibernate
+pacman -Qs font
+sudo pacman -R ttf-times-new-roman
+pacman -Ss bluetooth
+sudo pacman -S pulseaudio-modules-bt
+pidof clash
+fc-cache -frv
+sudo fc-cache -frv
+ls
+clear
+pacman -Qs font
+sudo pacman -R ttf-nerd-fonts-symbols
+z fontconfig
+ls
+rm 10-nerd-font-symbols.conf
+ls
+vi fonts.conf
+vi
+sudo pacman -S ttf-nerd-fonts-symbols-mono
+cd
+z fontconfig
+ls
+ln -sf /etc/fonts/conf.avail/10-nerd-font-symbols.conf ./
+ls
+vi
+ls
+neofetch
+clear
+ls
+ls
+sudo pacman -S noto-fonts
+fc-cache -frv
+sudo pacman -S noto-fonts-extra
+clear
+fc-cache -frv
+clear
+ls
+yay -Sc
+df
+clear
+l
+sudo journalctl -p 3 -xb
+sudo journalctl -p 3 -xb
+clear
+yay -Ssa kernel --sort-by popularity
+yay -Ssa kernel -sort-by popularity
+man yay
+yay -Ssa kernel --sortby popularity
+modprobed-db
+ls
+rm ort
+clear
+ls
+sudo pacman -S hwinfo
+sudo hwinfo > hwinfo.log
+modprobed-db store
+modprobed-db 
+modprobed-db 
+modprobed-db store
+modprobed-db store
+vi hwinfo.log
+ls
+neofetch
+rm hwinfo.log
+ls
+sudo journalctl -p 3 -xb
+sudo journalctl -p 3 -xb
+modprobed-db store
+modprobed-db list
+sudo journalctl -p 3 -xb
+clear
+ls
+neofetch
+ls
+htop
+ls
+neofetch
+clear
+adb devices
+cd Downloads
+ls
+cd Phone
+ls
+cd ..
+ls
+rm license.rtf -rf Fonts
+ls
+cd Phone
+ls
+mv ../OnePlus7ProHydrogen_21.H.29_OTA_029_all_2009152105_a92d4caecd5e43bc.zip ./
+ls
+mkdir backup
+ls
+cd backup
+ls
+adb pull /sdcard/Pictures ./
+adb pull /sdcard/Music ./
+ls
+adb pull /sdcard/Download/contacts.vcf ./
+adb pull /sdcard/Download/IceKernel-vermouth_unified.zip ./
+adb pull /sdcard/Download/Win10_20H2_Chinese\(Simplified\)_x64.iso ../
+ls
+cd ..
+ls
+mkdir UDisk
+su -
+cd Downloads/Phone
+ls
+sudo mkfs.exfat --help
+sudo mkfs.exfat -L SanDisk /dev/sda1
+sudo partprobe
+sudo mkfs.exfat -L SanDisk /dev/sda1
+sudo mkfs.exfat -L SanDisk /dev/sda1
+ls
+cd Downloads/Phone
+ls
+adb reboot bootloader
+rmdir UDisk 
+fastboot boot twrp-3.4.0-0-guacamole-unified-Q-mauronofrio.img
+fastboot boot twrp-3.4.0-0-guacamole-unified-Q-mauronofrio.img
+fastboot boot twrp-3.4.0-0-guacamole-unified-Q-mauronofrio.img
+fastboot boot twrp-3.4.0-0-guacamole-unified-Q-mauronofrio.img
+cd Downloads
+ls
+cd Phone
+ls
+fastboot boot twrp-3.4.0-0-guacamole-unified-Q-mauronofrio.img
+adb devices
+ls
+cd Downloads
+ls
+adb push app-arm64-v8a-release.apk /sdcard/
+killall clash
+cd .config/clash
+,s
+ls
+vi config.yaml
+cat config.yaml
+wget https://sub.coolti.me/link/vG70Pu80AJPCL1BI?clash=2 -O config.yaml
+wget 'https://sub.coolti.me/link/vG70Pu80AJPCL1BI?clash=2' -O config.yaml
+systemctl status
+clear
+ls
+clear
+ls
+systemctl hibernate
+vi
+sudo journalctl -p 3 -xb
+sudo journalctl -p 3 -xb
+neofetch
+neofetch
+clear
+yay -Syu
+sudo journalctl -p 3 -xb
+sudo journalctl -p 3 -xb
+clear
+su -
+sudo journalctl -p 3 -xb
+clear
+sudo journalctl -p 3 -xb
+sudo journalctl -p 3 -xb
+clear
+ls
+su -
+sudo pacman -S tlp
+cd /etc
+ls
+vi tlp.
+vi tlp.conf
+vi tlp.conf
+su -
+ls
+sudo journalctl -p 3 -xb
+clear
+su -
+neofetch
+clear
+neofetch
+su -
+sudo pacman -R tlp
+sudo pacman -S tlp
+su -
+vim /etc/tlp.conf
+neofetch
+sudo journalctl -p 3 -xb
+clear
+ls
+yay -Syu
+yay -Syyu
+vi
+clear
+htop
+systemctl hibernate
+sudo journalctl -p 3 -xb
+sudo pacman -R acpi_call
+sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg
+neofetch
+clear
+neofetch
+systemctl hibernate
+pidof clash
+z Code
+ls
+ls
+vi Maze.cpp
+rm Maze.db
+ls
+rm a.out
+ls
+vi Maze.cpp
+vi Stack.h
+ls
+vi Stack.cpp
+vi Stack.cpp
+vi Stack.h
+vi Maze.cpp
+g++ Maze.cpp Stack.cpp
+vi Maze.cpp
+ls
+clang++ Stack.cpp Maze.cpp
+clang++ Stack.cpp Maze.cpp -v
+vi Maze.cpp
+vi Stack.cpp
+vi Maze.cpp
+clang++ Stack.cpp Maze.cpp -v
+vi Maze.cpp
+g++ Stack.cpp Maze.cpp -v
+vi Maze.cpp
+vi Stack.h
+vi Stack.cpp
+clang++ Stack.cpp Maze.cpp -v
+vi Stack.h
+vi Stack.cpp
+clang++ Stack.cpp Maze.cpp -v
+ls
+clang++ Stack.h Stack.cpp Maze.cpp
+l
+vi Stack.h.gch
+file Stack.h.gch
+rm Stack.h.gch
+clang++ Stack.cpp Maze.cpp
+vi Maze.cpp
+vi Stack.h
+clang++ Stack.cpp Maze.cpp
+vi Stack.cpp
+clang++ Maze.cpp Stack.cpp
+vi Stack.cpp
+rm Stack.cpp
+ls
+vi Stack.h
+vi Maze.cpp
+clang++ Maze.cpp
+./a.out
+ls
+vi K.cpp
+vi Reverse.cpp
+l
+clear
+ls
+vi Stack.h
+cd
+systemctl hibernate
+systemctl hibernate
+man useradd
+clear
+ls
+yay -Syu
+ls
+neofetch
+cd Downloads
+ls
+tar -xzvpf dwm-6.2.tar.gz
+ls
+cd dwm-6.2
+ls
+vi Makefile
+vi config.mk
+ls
+vi config.mk
+export PREFIX=~/.local
+make clean install
+ls /usr/local
+ls /usr/local/bin
+ls
+file dwm
+l
+vi dwm.c
+ls
+export PREFIX="${HOME}/.local"
+echo $PREFIX
+vi config.mk
+make clean install
+ls
+PREFIX=${HOME}/.local make clean install
+ls
+clear
+ls
+vi config.mk
+make clean install
+cd ~
+cd .local/bin
+ls
+cd ../share/man
+ls
+cd man1
+ls
+vi dwm.1
+ls
+pacman -Ss xorg
+z dwm
+make uninstall
+ls
+cd ..
+ls
+rm -rf dwm-6.2 
+mv app-arm64-v8a-release.apk Phone
+ls
+sudo pacman -S stow
+cd Github
+ls
+cd Anhelor.github.io
+ls
+cd ..
+rm -rf Anhelor.github.io 
+git clone https://github.com/Anhelor/Anhelor.github.io
+ls
+cd Anhelor.github.io
+ls
+git branch -d dotfiles
+git branch
+git switch dotfiles
+git switch gh-pages
+git switch master
+git switch dotfiles
+git switch gh-pages
+git switch master
+git branch -d dotfiles
+ls
+git branch -d gh-pages
+ls
+l
+rm -rf *
+l
+vi ~/.config/zsh/.zshrc
+cd Downloads
+ls
+rm -rf YAAP-11-Alpha-yaap_guacamole-20201111.zip DataTypeTest-jyp DataTypeTest-gjc dwm-6.2.tar.gz 
+ls
+cd Phone
+ls
+adb devices
+ls
+rm app-arm64-v8a-release.apk 
+ls
+rm OnePlus7ProHydrogen_21.H.29_OTA_029_all_2009152105_a92d4caecd5e43bc.zip 
+ls
+cd backup
+ls
+adb push Music/*.mp3 /sdcard/
+adb shell
+ls
+adb push Music/*.mp3 /sdcard/Music/
+ls
+cd ..
+ls
+cd backup/Pictures
+ls
+adb push CoolMarket /sdcard/Pictures/
+adb push DownloadPicture /sdcard/Pictures/
+adb push Screenshots /sdcard/Pictures/
+adb push DCIM/Camera/*.jpg /sdcard/DCIM/Camera/
+ls
+cd ..
+ls
+cd ..
+ls
+rm -rf backup 
+ls
+adb push Win10_20H2_Chinese\(Simplified\)_x64.iso /sdcard/Download/
+adb push OnePlus7ProOxygen_21.E.30_OTA_030_all_2010111747_678eb7e6b47.zip  /sdcard/Download/
+adb push twrp-3.4.0-0-guacamole-unified-* /sdcard/Download/
+ls
+cd ..
+ls
+adb push C++\ Primer\ ç¬¬äºƒ´çƒ©ƒ¨ï¼ƒ¨ä¹ƒ€éƒ‚ƒ¸éƒ»ƒ¦ï¼ƒ©.pdf /sdcard/Download/
+ls
+cd ..
+l
+ls
+man tar
+tar -xZvpf Code.tar.zst Code
+tar -xZvpf Code Code.tar.zst
+ls
+man tar
+tar -cZvpf Code.tar.zst Code 
+ls
+rm Code.tar.zst 
+man tar
+man zstd
+tar -czvpf Code.tar.gz Code
+ls
+l
+adb push Code.tar.gz /sdcard/Download/
+ls
+rm Code.tar.gz
+ls
+cd Github
+ls
+cd
+clear
+ls
+z io
+ls
+rm -rf *
+ls
+l
+git branch
+git add *
+l
+git add 
+git add .
+ls
+git commit -m "reset"
+git config --global user.email "2238040405lex@gmail.com"
+git config --global user.name "Anhelor"
+git commit -m "reset"
+git switch dotfiles
+ls
+git push origin --delete dotfiles
+git push origin --delete origin/gh-pages
+git push origin --delete gh-pages
+ls
+git switch master
+ls
+git pull
+ls
+cd ..
+ls
+rm -rf Anhelor.github.io
+ls
+ls
+cd ..
+ls
+git clone https://github.com/Anhelor/dotfiles.git
+ls
+cd dotfiles
+l
