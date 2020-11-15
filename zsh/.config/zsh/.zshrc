@@ -65,9 +65,9 @@ zle -N edit-command-line
 bindkey '^t' edit-command-line
 
 # Load plugins
-source "${ZDOTDIR}/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" 2> /dev/null
-source "${ZDOTDIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh" 2> /dev/null
-eval "$(lua "${ZDOTDIR}/plugins/z.lua/z.lua"  --init zsh)"
+#source "${ZSH_CACHE_DIR}/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" 2> /dev/null
+#source "${ZSH_CACHE_DIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh" 2> /dev/null
+#eval "$(lua "${ZSH_CACHE_DIR}/plugins/z.lua/z.lua"  --init zsh)"
 
 # bindkeys
 bindkey '^p' up-line-or-history
