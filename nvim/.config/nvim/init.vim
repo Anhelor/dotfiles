@@ -114,7 +114,7 @@ set si "Smart indent
 set wrap "Wrap lines
 
 " Vim-plug
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.cache/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sainnhe/sonokai'
@@ -143,28 +143,17 @@ call plug#end()
 
 " Color
 set termguicolors
-" let g:sonokai_transparent_background = 1
-" let g:sonokai_style = 'shusia'
-" let g:sonokai_enable_italic = 1
-" let g:sonokai_disable_italic_comment = 1
-" colorscheme sonokai
-" let g:vim_monokai_tasty_italic = 1
-" colorscheme vim-monokai-tasty
-let g:monokai_term_italic = 1
-colorscheme monokai
+let g:sonokai_transparent_background = 1
+let g:sonokai_enable_italic = 1
+let g:sonokai_disable_italic_comment = 1
+colorscheme sonokai
 
 " Rainbow
 let g:rainbow_active = 1
 
 " Airline
-let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-" adding to vim-airline's tabline
-let g:webdevicons_enable_airline_tabline = 1
-" adding to vim-airline's statusline
-let g:webdevicons_enable_airline_statusline = 1
-" let g:airline_theme = 'sonokai'
-let g:airline_theme='monokai_tasty'
+let g:airline_theme = 'sonokai'
 
 " Coc.nvim
 " TextEdit might fail if hidden is not set.

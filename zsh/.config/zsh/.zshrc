@@ -85,5 +85,6 @@ alias lsa='exa -lah'
 alias l='exa -lah'
 alias ll='exa -lh'
 alias vi='nvim'
+alias svi='sudoedit'
 alias df='df -Th'
 
