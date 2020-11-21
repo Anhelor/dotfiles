@@ -1,0 +1,25 @@
+base system: base base-devel linux linux-zen linux-firmware intel-ucode
+bootloader: grub efibootmgr os-prober grub-theme-vimix
+console: bash-completion terminus-font
+network: dhcpcd iwd
+editor: vim neovim(python-neovim nodejs yarn universe-ctags-git)
+file system: xfsprogs dosfstools xfsdump ntfs-3g exfatprogs gdisk
+man: man-db man-pages mlocate
+cn repo: archlinuxcn-keyring
+xorg: xorg-server xorg-setroot xorg-xinit xsel acpilight
+font: noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-sarasa-gothic ttf-migu ttf-fantasque-sans-mono-noloopk ttf-nerd-fonts-symbols-mono otf-font-awesome
+media: intel-media-driver intel-gpu-tools vlc svp mpv-git
+broser: chromium pepper-flash
+desktop apps: telegram-desktop zathura
+theme: lxappearance-gtk3 qt5ct kvantum-qt5 gtk-engines gtk-engine-murrine kvantum-materia materia-gtk-theme qogir-icon-theme-git papirus-icon-theme arc-icon-theme
+sound: pulseaudio pulseaudio-alsa pulsemixer
+bluetooth: bluez-utils pulseaudio-modules-bt
+power: tlp powertop smartmontools ethtool
+tools: wget yay neofetch htop highlight stow tree proxychains-ng gdb
+llvm: clang lld lldb llvm
+desktop: bspwm sxhkd polybar picom dunst(libnotify) i3lock-color betterlockscreen rofi numlockx
+file manager: ranger ueberzug
+shell: zsh zsh-completion lua exa
+terminal: alacritty
+fcitx5: fcitx5-im fcitx5-material-color fcitx5-chinese-addons fcitx5-pinyin-zhwiki
+android: android-udev android-tools

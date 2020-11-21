@@ -16,9 +16,9 @@ super + x
 
 # app laucher
 super + d
-	rofi -modi run,drun -theme Arc -font "Sans 14" -icon-theme "Papirus" -show-icons -show drun
+	rofi -modi run,drun -theme gruvbox-dark-soft -font "Sans 14" -icon-theme "Papirus" -show-icons -show drun
 super + F2
-	rofi -modi drun,run -theme Arc -font "Sans 14" -show run
+	rofi -modi drun,run -theme gruvbox-dark-soft -font "Sans 14" -show run
 
 # XF86 keys
 XF86AudioMute

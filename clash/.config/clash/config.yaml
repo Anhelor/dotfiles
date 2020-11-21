@@ -1,7 +1,7 @@
 #!MANAGED-CONFIG https://sub.coolti.me/link/vG70Pu80AJPCL1BI?clash=2
 
 #---------------------------------------------------#
-## 上次更新于：2020-11-13 07:18:52
+## 上次更新于：2020-11-21 09:20:21
 #---------------------------------------------------#
 
 mixed-port: 7891
@@ -103,18 +103,6 @@ proxies:
     type: ssr
     server: zz-cn-1.node-coolti.top
     port: 1006
-    cipher: aes-256-cfb
-    password: DjMLz0
-    protocol: auth_aes128_md5
-    protocol-param: '3811:aXLbRy'
-    obfs: plain
-    obfs-param: 4a6e43811.y51rx12
-    udp: true
-  -
-    name: '🇰🇷 KR-03-首尔-中继'
-    type: ssr
-    server: zz-cn-1.node-coolti.top
-    port: 1056
     cipher: aes-256-cfb
     password: DjMLz0
     protocol: auth_aes128_md5
@@ -288,7 +276,6 @@ proxy-groups:
       - '🇯🇵 JP-A03-东京-CU中继'
       - '🇯🇵 JP-A04-东京-CU中继'
       - '🇰🇷 KR-02-首尔-CU中继'
-      - '🇰🇷 KR-03-首尔-中继'
       - '🇷🇺 RU-01-LED-CU中继'
       - '🇸🇬 SG-01-新加坡-CU中继'
       - '🇸🇬 SG-02-新加坡-CU中继'
@@ -323,7 +310,6 @@ proxy-groups:
       - '🇯🇵 JP-A03-东京-CU中继'
       - '🇯🇵 JP-A04-东京-CU中继'
       - '🇰🇷 KR-02-首尔-CU中继'
-      - '🇰🇷 KR-03-首尔-中继'
       - '🇷🇺 RU-01-LED-CU中继'
       - '🇸🇬 SG-01-新加坡-CU中继'
       - '🇸🇬 SG-02-新加坡-CU中继'
@@ -351,7 +337,6 @@ proxy-groups:
       - '🇯🇵 JP-A03-东京-CU中继'
       - '🇯🇵 JP-A04-东京-CU中继'
       - '🇰🇷 KR-02-首尔-CU中继'
-      - '🇰🇷 KR-03-首尔-中继'
       - '🇷🇺 RU-01-LED-CU中继'
       - '🇸🇬 SG-01-新加坡-CU中继'
       - '🇸🇬 SG-02-新加坡-CU中继'
@@ -379,7 +364,6 @@ proxy-groups:
       - '🇯🇵 JP-A03-东京-CU中继'
       - '🇯🇵 JP-A04-东京-CU中继'
       - '🇰🇷 KR-02-首尔-CU中继'
-      - '🇰🇷 KR-03-首尔-中继'
       - '🇷🇺 RU-01-LED-CU中继'
       - '🇸🇬 SG-01-新加坡-CU中继'
       - '🇸🇬 SG-02-新加坡-CU中继'
@@ -407,7 +391,6 @@ proxy-groups:
       - '🇯🇵 JP-A03-东京-CU中继'
       - '🇯🇵 JP-A04-东京-CU中继'
       - '🇰🇷 KR-02-首尔-CU中继'
-      - '🇰🇷 KR-03-首尔-中继'
       - '🇷🇺 RU-01-LED-CU中继'
       - '🇸🇬 SG-01-新加坡-CU中继'
       - '🇸🇬 SG-02-新加坡-CU中继'
