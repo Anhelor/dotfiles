@@ -10,11 +10,9 @@ font:
     style: Bold
   italic:
     family: monospace
-    family: Operator Mono Book
     style: Italic
   bold_italic:
     family: monospace
-    family: Operator Mono Book
     style: Bold Italic
   size: 11.0
 
@@ -48,7 +46,7 @@ colors:
     magenta: '#d3869b'
     cyan:    '#8ec07c'
     white:   '#ebdbb2'
-background_opacity: 1.0
+background_opacity: 0.85
 
 # Key bindings
 #

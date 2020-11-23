@@ -6,7 +6,7 @@ numlockx &
 fcitx5 > /dev/null 2>&1 &
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom --config /dev/null --experimental-backends --backend glx --vsync &
-feh --bg-fill ~/Pictures/wallhaven-d5ggkl.png &
+feh --bg-fill ~/Pictures/wallpaperflare.com_wallpaper.jpg &
 ~/.config/polybar/launch.sh &
 dunst -config ~/.config/dunst/dunstrc &
 xsetroot -cursor_name left_ptr &
