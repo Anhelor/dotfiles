@@ -21,5 +21,7 @@ Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'justinmk/vim-syntax-extra'
+Plug 'sheerun/vim-polyglot'
 Plug 'sbdchd/neoformat'
+Plug 'Yggdroot/indentLine'
 call plug#end()
