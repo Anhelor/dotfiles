@@ -2,17 +2,21 @@
 autoload -U colors && colors	# Load colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 setopt autocd		# Automatically cd into typed directory.
-setopt no_nomatch   # No match fixed
+setopt interactive_comments
+setopt no_nomatch   	# No match fixed
 
 # History in cache directory:
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE="${ZSH_CACHE_DIR}/history"
+HISTSIZE=10000000
+SAVEHIST=10000000
+HISTFILE=~/.cache/zsh/history
 
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
+
 # case insensitive (all), partial-word and substring completion
 if [[ "$CASE_SENSITIVE" = true ]]; then
   zstyle ':completion:*' matcher-list 'r:|=*' 'l:|=* r:|=*'
@@ -24,8 +28,6 @@ else
   fi
 fi
 unset CASE_SENSITIVE HYPHEN_INSENSITIVE
-compinit
-_comp_options+=(globdots)		# Include hidden files.
 
 # vi mode
 bindkey -v
@@ -38,38 +40,12 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
-# Change cursor shape for different vi modes.
-function zle-keymap-select {
-  if [[ ${KEYMAP} == vicmd ]] ||
-     [[ $1 = 'block' ]]; then
-    echo -ne '\e[1 q'
-  elif [[ ${KEYMAP} == main ]] ||
-       [[ ${KEYMAP} == viins ]] ||
-       [[ ${KEYMAP} = '' ]] ||
-       [[ $1 = 'beam' ]]; then
-    echo -ne '\e[5 q'
-  fi
-}
-zle -N zle-keymap-select
-zle-line-init() {
-    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
-    echo -ne "\e[5 q"
-}
-zle -N zle-line-init
-echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
-
-# Edit line in vim with ctrl-t:
-autoload edit-command-line
-zle -N edit-command-line
-bindkey '^t' edit-command-line
-
 # Load plugins
+eval "$(luajit ${ZDOTDIR}/plugins/z.lua/z.lua --init zsh)"
 source "${ZDOTDIR}/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" 2> /dev/null
-source "${ZDOTDIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh" 2> /dev/null
-eval "$(lua "${ZDOTDIR}/plugins/z.lua/z.lua"  --init zsh)"
+source "${ZDOTDIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" 2> /dev/null
 
-# bindkeys
+# Some bindkeys
 bindkey '^p' up-line-or-history
 bindkey '^n' down-line-or-history
 bindkey '^a' beginning-of-line
@@ -79,13 +55,10 @@ bindkey '^b' backward-word
 bindkey '^o' end-of-line
 
 # alias
-# List directory contents
 alias ls='exa'
-alias lsa='exa -lah'
 alias l='exa -lah'
-alias ll='exa -lh'
+alias tree='exa -Tlah'
 alias vi='nvim'
 alias svi='sudoedit'
 alias df='df -Th'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
