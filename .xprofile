@@ -1,0 +1,22 @@
+export XDG_CONFIG_HOME="${HOME}/.config"
+export XDG_CACHE_HOME="${HOME}/.cache"
+export XDG_DATA_HOME="${HOME}/.local/share"
+
+export INPUT_METHOD=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+export LIBVA_DRIVER_NAME=iHD
+export EDITOR=nvim
+
+export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
+export ZSH_CACHE_DIR="${XDG_CACHE_HOME}/zsh"
+export _ZL_DATA="${ZSH_CACHE_DIR}/.zlua"
+
+export GO111MODULE=on
+export GOPROXY=https://goproxy.cn
+export GOPATH="${XDG_DATA_HOME}/go"
+export YARN_PATH="${XDG_DATA_HOME}/yarn"
+
+export PATH="${YARN_PATH}/bin:${GOPATH}/bin:${PATH}"
