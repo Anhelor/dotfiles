@@ -13,6 +13,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'yianwillis/vimcdoc'
 Plug 'psliwka/vim-smoothie'
+Plug 'andymass/vim-matchup'
 
 Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
