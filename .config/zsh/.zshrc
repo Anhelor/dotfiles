@@ -1,9 +1,9 @@
 # Enable colors and change prompt:
-autoload -U colors && colors	# Load colors
+autoload -U colors && colors # Load colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-setopt autocd		# Automatically cd into typed directory.
+setopt autocd # Automatically cd into typed directory.
 setopt interactive_comments
-setopt no_nomatch   	# No match fixed
+setopt no_nomatch # No match fixed
 
 # History in cache directory:
 HISTSIZE=10000000
@@ -15,7 +15,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots)		# Include hidden files.
+_comp_options+=(globdots) # Include hidden files.
 
 # case insensitive (all), partial-word and substring completion
 if [[ "$CASE_SENSITIVE" = true ]]; then
@@ -42,8 +42,8 @@ bindkey -v '^?' backward-delete-char
 
 # Load plugins
 eval "$(luajit ${ZDOTDIR}/plugins/z.lua/z.lua --init zsh)"
-source "${ZDOTDIR}/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" 2> /dev/null
-source "${ZDOTDIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" 2> /dev/null
+source "${ZDOTDIR}/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" 2>/dev/null
+source "${ZDOTDIR}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" 2>/dev/null
 
 # Some bindkeys
 bindkey '^p' up-line-or-history
@@ -54,7 +54,7 @@ bindkey '^f' forward-word
 bindkey '^b' backward-word
 bindkey '^o' end-of-line
 
-# alias
+# Alias
 alias ls='exa'
 alias l='exa -lah'
 alias tree='exa -Tlah'
