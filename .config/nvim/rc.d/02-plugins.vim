@@ -6,6 +6,7 @@ Plug 'luochen1990/rainbow'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'dstein64/vim-startuptime'
 Plug 'lilydjwg/fcitx.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
@@ -16,6 +17,5 @@ Plug 'andymass/vim-matchup'
 Plug 'sbdchd/neoformat'
 Plug 'Yggdroot/indentLine'
 
-Plug 'sheerun/vim-polyglot'
 Plug 'jaxbot/semantic-highlight.vim'
 call plug#end()
