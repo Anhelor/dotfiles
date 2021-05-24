@@ -19,5 +19,7 @@ Plug 'matze/vim-move'
 Plug 'sbdchd/neoformat'
 Plug 'Yggdroot/indentLine'
 
+Plug 'honza/vim-snippets'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jaxbot/semantic-highlight.vim'
 call plug#end()
