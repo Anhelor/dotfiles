@@ -13,7 +13,6 @@ Plug 'psliwka/vim-smoothie'
 Plug 'andymass/vim-matchup'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
-Plug 'pseewald/vim-anyfold'
 Plug 'matze/vim-move'
 
 Plug 'sbdchd/neoformat'
@@ -21,5 +20,8 @@ Plug 'Yggdroot/indentLine'
 
 Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'liuchengxu/vista.vim'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'jaxbot/semantic-highlight.vim'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 call plug#end()

@@ -9,7 +9,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " Semantic-highlight.vim
-autocmd FileType * :SemanticHighlight
+nmap <leader>sm :SemanticHighlight<CR>
 
 " Vim-matchup
 let g:loaded_matchit = 1
@@ -21,13 +21,9 @@ nmap <silent> <leader>fc :Neoformat<CR>
 " Vim-easymotion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 let g:EasyMotion_smartcase = 1  " Turn on case-insensitive feature
-nmap <Leader>s <Plug>(easymotion-overwin-f)
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-
-" Vim-anyfold
-autocmd Filetype * AnyFoldActivate  " Activate for all filetypes
-set foldlevel=99  " Open all folds
+nmap <leader>s <Plug>(easymotion-overwin-f)
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
 
 " Coc.nvim
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
@@ -93,3 +89,33 @@ let g:coc_snippet_next = '<c-j>'
 
 " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
 let g:coc_snippet_prev = '<c-k>'
+
+" Vim-lsp-cxx-highlight
+let g:lsp_cxx_hl_use_text_props = 1
+
+" Vista.vim
+" Sidebar width
+let g:vista_sidebar_width = 40
+
+" Specifying the executive.
+let g:vista_default_executive = 'ctags'
+
+" Vista map
+nmap <leader>vc :Vista<CR>
+nmap <leader>vl :Vista coc<CR>
+
+" Vim-gutentags
+" Project symbol
+let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
+
+" Ctags' file name
+let g:gutentags_ctags_tagfile = '.tags'
+
+" Generate ctags storage in ~/.cache/tags
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+
+" Ctags' parameters
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
+let g:gutentags_ctags_extra_args += ['--c-kinds=+px']

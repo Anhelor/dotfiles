@@ -81,6 +81,9 @@ set laststatus=2
 set number
 set relativenumber
 
+" Use system clipboard
+set clipboard+=unnamedplus
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
