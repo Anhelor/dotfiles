@@ -2,8 +2,8 @@ call plug#begin('~/.cache/nvim/pluged')
 Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
 Plug 'mhinz/vim-startify'
+Plug 'ryanoasis/vim-devicons'
 
 Plug 'lilydjwg/fcitx.vim'
 Plug 'tpope/vim-commentary'
