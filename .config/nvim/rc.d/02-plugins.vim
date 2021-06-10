@@ -17,6 +17,7 @@ Plug 'matze/vim-move'
 
 Plug 'sbdchd/neoformat'
 Plug 'Yggdroot/indentLine'
+Plug 'chrisbra/vim-diff-enhanced'
 
 Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
