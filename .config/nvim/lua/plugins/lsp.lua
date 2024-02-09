@@ -22,8 +22,8 @@ return function()
     })
 
     local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
-
     lspconfig.pyright.setup({
+        capabilities = capabilities,
         settings = {
             python = {
                 analysis = {
@@ -33,23 +33,7 @@ return function()
             },
         },
     })
-    lspconfig.clangd.setup({
-        cmd = {
-            "clangd",
-            "--all-scopes-completion",
-            "--background-index",
-            "--clang-tidy",
-            "--compile-commands-dir=build",
-            "--completion-style=bundled",
-            "--header-insertion-decorators",
-            "--header-insertion=iwyu",
-            "--pch-storage=disk",
-            "-j=8",
-        },
-        capabilities = capabilities,
-    })
     lspconfig.lua_ls.setup({
-        cmd = { "/usr/bin/lua-language-server" },
         capabilities = capabilities,
         settings = {
             Lua = {

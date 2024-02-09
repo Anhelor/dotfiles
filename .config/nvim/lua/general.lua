@@ -67,15 +67,15 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.termguicolors = true
 vim.opt.undofile = true
-vim.opt.updatetime = 250
+vim.opt.timeout = true
+vim.opt.timeoutlen = 450
+vim.opt.updatetime = 350
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.diffopt:append("algorithm:patience")
 
 -- mappings
 -- behaviours
 vim.api.nvim_set_keymap("n", "0", "^", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "j", "v:count == 0 ? 'gj' : 'j'", { noremap = true, expr = true, silent = true })
-vim.api.nvim_set_keymap("n", "k", "v:count == 0 ? 'gk' : 'k'", { noremap = true, expr = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-n>", "<cmd>nohl<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-w>", "<cmd>w<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-q>", "<cmd>q<CR>", { noremap = true, silent = true })

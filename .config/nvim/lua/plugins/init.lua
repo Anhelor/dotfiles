@@ -104,6 +104,14 @@ require("lazy").setup({
         config = require("plugins.cmp"),
     },
 
+    -- file explorer
+    {
+        "nvim-tree/nvim-tree.lua",
+        lazy = true,
+        cmd = { "NvimTreeToggle", "NvimTreeRefresh" },
+        opts = {},
+    },
+
     -- comment
     {
         "numToStr/Comment.nvim",
@@ -124,8 +132,8 @@ require("lazy").setup({
     {
         "max397574/better-escape.nvim",
         lazy = true,
-        event = "InsertEnter",
-        opts = {},
+        event = { "CursorHold", "CursorHoldI" },
+        opts = { timeout = vim.o.timeoutlen },
     },
 
     -- neoscroll
@@ -136,22 +144,26 @@ require("lazy").setup({
         opts = {},
     },
 
+    -- accelerated-jk
+    {
+        "rainbowhxch/accelerated-jk.nvim",
+        lazy = true,
+        event = "VeryLazy",
+        opts = {},
+    },
+
     -- format code
     {
         "sbdchd/neoformat",
         lazy = true,
-        keys = {
-            { "<leader>fc", "<cmd>Neoformat<CR>", desc = "neoformat" },
-        },
+        cmd = { "Neoformat" },
     },
 
     -- easymotion-like
     {
         "phaazon/hop.nvim",
         lazy = true,
-        keys = {
-            { "<leader>h", "<cmd>HopChar2<CR>", desc = "hop.nvim" },
-        },
+        cmd = { "HopChar2" },
         opts = {},
     },
 
