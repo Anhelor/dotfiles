@@ -67,9 +67,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.termguicolors = true
 vim.opt.undofile = true
-vim.opt.timeout = true
-vim.opt.timeoutlen = 450
-vim.opt.updatetime = 350
+vim.opt.updatetime = 250
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.diffopt:append("algorithm:patience")
 

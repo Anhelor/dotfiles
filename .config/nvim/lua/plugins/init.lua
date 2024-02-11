@@ -128,14 +128,6 @@ require("lazy").setup({
         opts = {},
     },
 
-    -- better-escape
-    {
-        "max397574/better-escape.nvim",
-        lazy = true,
-        event = { "CursorHold", "CursorHoldI" },
-        opts = { timeout = vim.o.timeoutlen },
-    },
-
     -- neoscroll
     {
         "karb94/neoscroll.nvim",
@@ -148,7 +140,7 @@ require("lazy").setup({
     {
         "rainbowhxch/accelerated-jk.nvim",
         lazy = true,
-        event = "VeryLazy",
+        event = { "CursorHold", "CursorHoldI" },
         opts = {},
     },
 
