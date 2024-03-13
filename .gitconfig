@@ -1,3 +1,5 @@
 [user]
 	name = Anhelor
 	email = 2238040405lex@gmail.com
+[safe]
+	directory = /home/anhelor/Workspace/t630/DeepSpeed
