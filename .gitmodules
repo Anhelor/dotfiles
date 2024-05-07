@@ -1,0 +1,6 @@
+[submodule ".config/zsh/plugins/F-Sy-H"]
+	path = .config/zsh/plugins/F-Sy-H
+	url = https://github.com/z-shell/F-Sy-H.git
+[submodule ".config/zsh/plugins/zsh-autosuggestions"]
+	path = .config/zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
