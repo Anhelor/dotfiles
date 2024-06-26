@@ -7,6 +7,7 @@ local opts = {
         "cpp",
         "cuda",
         "lua",
+        "json",
         "python",
         "vim",
         "vimdoc",
