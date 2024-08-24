@@ -147,7 +147,7 @@ require("lazy").setup({
 
     -- easymotion-like
     {
-        "phaazon/hop.nvim",
+        "smoka7/hop.nvim",
         lazy = true,
         cmd = { "HopChar2" },
         opts = {},

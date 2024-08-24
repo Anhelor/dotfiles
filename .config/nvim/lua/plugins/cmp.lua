@@ -44,17 +44,7 @@ return function()
             end, { "i", "s" }),
         },
         formatting = {
-            format = require("lspkind").cmp_format({
-                mode = "text",
-                menu = {
-                    buffer = "[Buffer]",
-                    dictionary = "[Dict]",
-                    luasnip = "[LuaSnip]",
-                    nvim_lsp = "[LSP]",
-                    nvim_lua = "[Lua]",
-                    path = "[Path]",
-                },
-            }),
+            format = require("lspkind").cmp_format({}),
         },
         sources = {
             { name = "nvim_lsp" },
