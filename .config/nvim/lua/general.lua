@@ -68,8 +68,28 @@ vim.opt.splitright = true
 vim.opt.termguicolors = true
 vim.opt.undofile = true
 vim.opt.updatetime = 250
-vim.opt.clipboard:append("unnamedplus")
+vim.opt.clipboard = "unnamedplus"
 vim.opt.diffopt:append("algorithm:patience")
+
+if vim.env.SSH_TTY ~= nil then
+    local function reg_paste_fn(_)
+        return function(_)
+            local content = vim.fn.getreg('"')
+            return vim.split(content, "\n")
+        end
+    end
+    vim.g.clipboard = {
+        name = "OSC 52",
+        copy = {
+            ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+            ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+        },
+        paste = {
+            ["+"] = reg_paste_fn("+"),
+            ["*"] = reg_paste_fn("*"),
+        },
+    }
+end
 
 -- mappings
 -- behaviours
