@@ -97,6 +97,7 @@ vim.api.nvim_set_keymap("n", "0", "^", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-n>", "<cmd>nohl<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-w>", "<cmd>w<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-q>", "<cmd>q<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "yp", "<cmd>%y<CR>", { noremap = true, silent = true })
 -- windows
 vim.api.nvim_set_keymap("n", "<C-j>", "<C-W>j", { noremap = true })
 vim.api.nvim_set_keymap("n", "<C-k>", "<C-W>k", { noremap = true })

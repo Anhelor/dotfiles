@@ -1,11 +1,6 @@
 [user]
 	name = Anhelor
 	email = 2238040405lex@gmail.com
-[safe]
-	directory = /home/anhelor/Workspace/t630/DeepSpeed
-	directory = /home/anhelor/Workspace/x299ii/SparkInfer
-	directory = /home/anhelor/Workspace/x299ii/vllm
-	directory = /home/anhelor/Workspace/t630/CoPipe
 [core]
     pager = delta
 [interactive]
@@ -18,3 +13,6 @@
     colorMoved = default
 [credential]
 	helper = store
+[safe]
+	directory = /home/anhelor/Workspace/x299aii/SparkInfer
+	directory = /home/anhelor/Workspace/x299aii/vllm

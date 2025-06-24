@@ -55,4 +55,9 @@ return function()
             },
         },
     })
+    lspconfig.clangd.setup({
+        capabilities = capabilities,
+        single_file_support = true,
+        cmd = { "clangd", "-j=6", "--pch-storage=memory", "--clang-tidy" },
+    })
 end

@@ -33,7 +33,7 @@ unset CASE_SENSITIVE HYPHEN_INSENSITIVE
 
 # vi mode
 bindkey -v
-export KEYTIMEOUT=1
+export KEYTIMEOUT=5
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char

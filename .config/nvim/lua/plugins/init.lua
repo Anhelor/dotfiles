@@ -15,9 +15,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    git = {
-        throttle = { enabled = true, rate = 4 },
-    },
     -- colorscheme
     {
         "catppuccin/nvim",
@@ -155,6 +152,9 @@ require("lazy").setup({
         "sbdchd/neoformat",
         lazy = true,
         cmd = { "Neoformat" },
+        init = function()
+            vim.g.shfmt_opt = "-s"
+        end,
     },
 
     -- easymotion-like
@@ -169,7 +169,7 @@ require("lazy").setup({
     {
         "dstein64/vim-startuptime",
         lazy = true,
-        cmd = "StartupTime",
+        cmd = { "StartupTime" },
         init = function()
             vim.g.startuptime_tries = 10
         end,
