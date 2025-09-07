@@ -14,5 +14,5 @@
 [credential]
 	helper = store
 [safe]
-	directory = /home/anhelor/Workspace/x299aii/SparkInfer
-	directory = /home/anhelor/Workspace/x299aii/vllm
+	directory = /home/anhelor/Workspace/x299aii/Megatron-LM
+	directory = /home/anhelor/Workspace/x299aii/CoPipe-Megatron

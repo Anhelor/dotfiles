@@ -41,7 +41,7 @@ require("lazy").setup({
         event = { "BufReadPost", "BufAdd", "BufNewFile" },
         config = function()
             require("bufferline").setup({
-                highlights = require("catppuccin.groups.integrations.bufferline").get(),
+                highlights = require("catppuccin.groups.integrations.bufferline").get_theme(),
             })
         end,
     },
@@ -77,6 +77,17 @@ require("lazy").setup({
         lazy = true,
         event = { "BufReadPost", "BufAdd", "BufNewFile" },
         config = require("plugins.lsp"),
+    },
+
+    -- telescope
+    {
+        "nvim-telescope/telescope.nvim",
+        lazy = true,
+        cmd = { "Telescope" },
+        dependencies = { "nvim-lua/plenary.nvim" },
+        config = function()
+            require("telescope").setup({})
+        end,
     },
 
     -- completion
