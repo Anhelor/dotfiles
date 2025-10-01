@@ -1,11 +1,4 @@
 return function()
-    local lspconfig = require("lspconfig")
-
-    vim.keymap.set("n", "<space>e", vim.diagnostic.open_float)
-    vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
-    vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
-    vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist)
-
     vim.api.nvim_create_autocmd("LspAttach", {
         group = vim.api.nvim_create_augroup("UserLspConfig", {}),
         callback = function(ev)
@@ -22,7 +15,7 @@ return function()
     })
 
     local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
-    lspconfig.pyright.setup({
+    vim.lsp.config["pyright"] = {
         capabilities = capabilities,
         settings = {
             python = {
@@ -32,8 +25,9 @@ return function()
                 },
             },
         },
-    })
-    lspconfig.lua_ls.setup({
+    }
+    vim.lsp.enable("pyright")
+    vim.lsp.config["lua_ls"] = {
         capabilities = capabilities,
         settings = {
             Lua = {
@@ -54,10 +48,12 @@ return function()
                 semantic = { enable = false },
             },
         },
-    })
-    lspconfig.clangd.setup({
+    }
+    vim.lsp.enable("lua_ls")
+    vim.lsp.config["clangd"] = {
         capabilities = capabilities,
         single_file_support = true,
         cmd = { "clangd", "-j=6", "--pch-storage=memory", "--clang-tidy" },
-    })
+    }
+    vim.lsp.enable("clangd")
 end

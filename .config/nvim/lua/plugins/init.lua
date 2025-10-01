@@ -41,7 +41,7 @@ require("lazy").setup({
         event = { "BufReadPost", "BufAdd", "BufNewFile" },
         config = function()
             require("bufferline").setup({
-                highlights = require("catppuccin.groups.integrations.bufferline").get_theme(),
+                highlights = require("catppuccin.special.bufferline").get_theme(),
             })
         end,
     },
