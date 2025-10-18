@@ -94,10 +94,13 @@ end
 -- mappings
 -- behaviours
 vim.api.nvim_set_keymap("n", "0", "^", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<A-n>", "<cmd>nohl<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "yp", "<cmd>%y<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<Tab>", ">", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<S-Tab>", "<", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-w>", "<cmd>w<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-q>", "<cmd>q<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "yp", "<cmd>%y<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-n>", "<cmd>nohl<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-i>", "<cmd>set ignorecase!<CR><cmd>set ignorecase?<CR>", { noremap = true, silent = true })
 -- windows
 vim.api.nvim_set_keymap("n", "<C-j>", "<C-W>j", { noremap = true })
 vim.api.nvim_set_keymap("n", "<C-k>", "<C-W>k", { noremap = true })

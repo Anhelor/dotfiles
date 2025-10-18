@@ -118,14 +118,6 @@ require("lazy").setup({
         config = require("plugins.cmp"),
     },
 
-    -- file explorer
-    {
-        "nvim-tree/nvim-tree.lua",
-        lazy = true,
-        cmd = { "NvimTreeToggle", "NvimTreeRefresh" },
-        opts = {},
-    },
-
     -- comment
     {
         "numToStr/Comment.nvim",
@@ -170,10 +162,14 @@ require("lazy").setup({
 
     -- easymotion-like
     {
-        "smoka7/hop.nvim",
+        "folke/flash.nvim",
         lazy = true,
-        cmd = { "HopChar2" },
-        opts = {},
+        event = { "CursorHold", "CursorHoldI" },
+        -- stylua: ignore
+        keys = {
+            { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end },
+            { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end },
+        },
     },
 
     -- startup time
