@@ -8,6 +8,7 @@ vim.api.nvim_set_keymap("n", "j", "<Plug>(accelerated_jk_gj)", opts)
 vim.api.nvim_set_keymap("n", "k", "<Plug>(accelerated_jk_gk)", opts)
 
 vim.api.nvim_set_keymap("n", "<leader>fc", "<cmd>Neoformat<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>fa", "<cmd>Neoformat autopep8<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>fb", "<cmd>Neoformat black<CR>", opts)
 
 vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
