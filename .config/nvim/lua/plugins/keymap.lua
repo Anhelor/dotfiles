@@ -1,19 +1,19 @@
 local opts = { noremap = true, silent = true }
-vim.api.nvim_set_keymap("n", "<leader>ls", "<cmd>Lazy sync<CR>", opts)
 
-vim.api.nvim_set_keymap("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>", opts)
-vim.api.nvim_set_keymap("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>bp", "<cmd>BufferLinePick<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>bc", "<cmd>BufferLinePickClose<CR>", opts)
+vim.keymap.set("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>", opts)
+vim.keymap.set("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>", opts)
+vim.keymap.set("n", "<leader>bp", "<cmd>BufferLinePick<CR>", opts)
+vim.keymap.set("n", "<leader>bc", "<cmd>BufferLinePickClose<CR>", opts)
 
-vim.api.nvim_set_keymap("n", "j", "<Plug>(accelerated_jk_gj)", opts)
-vim.api.nvim_set_keymap("n", "k", "<Plug>(accelerated_jk_gk)", opts)
+vim.keymap.set("n", "j", "<Plug>(accelerated_jk_gj)", opts)
+vim.keymap.set("n", "k", "<Plug>(accelerated_jk_gk)", opts)
 
-vim.api.nvim_set_keymap("n", "<leader>fc", "<cmd>Neoformat<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>fa", "<cmd>Neoformat autopep8<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>fb", "<cmd>Neoformat black<CR>", opts)
+vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
+vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
 
-vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
+vim.keymap.set("n", "<leader>fc", "<cmd>Neoformat<CR>", opts)
+vim.keymap.set("v", "<leader>fc", ":'<,'>Neoformat<CR>", opts)
 
-vim.api.nvim_set_keymap("n", "<leader>sh", "<cmd>LspClangdSwitchSourceHeader<CR>", opts)
+vim.keymap.set({ "n", "t" }, "<leader>t", "<cmd>FloatermToggle<CR>", opts)
+
+vim.keymap.set("n", "<leader>sh", "<cmd>LspClangdSwitchSourceHeader<CR>", opts)

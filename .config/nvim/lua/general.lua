@@ -92,17 +92,22 @@ if vim.env.SSH_TTY ~= nil then
 end
 
 -- mappings
--- behaviours
-vim.api.nvim_set_keymap("n", "0", "^", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "yp", "<cmd>%y<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "<Tab>", ">", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "<S-Tab>", "<", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<A-w>", "<cmd>w<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<A-q>", "<cmd>q<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<A-n>", "<cmd>nohl<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<A-i>", "<cmd>set ignorecase!<CR><cmd>set ignorecase?<CR>", { noremap = true, silent = true })
--- windows
-vim.api.nvim_set_keymap("n", "<C-j>", "<C-W>j", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-k>", "<C-W>k", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-h>", "<C-W>h", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-l>", "<C-W>l", { noremap = true })
+vim.keymap.set("n", "0", "^", { noremap = true, silent = true })
+vim.keymap.set("n", "yp", "<cmd>%y<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("v", "<Tab>", ">gv", { noremap = true, silent = true })
+vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<A-w>", "<cmd>w<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<A-q>", "<cmd>q<CR>", { noremap = true, silent = true })
+vim.keymap.set({ "i", "v", "c", "t" }, "<A-;>", "<Esc>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<A-n>", "<cmd>nohl<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<A-i>", function()
+    vim.o.ignorecase = not vim.o.ignorecase
+    vim.notify("ignorecase: " .. tostring(vim.o.ignorecase))
+end, { noremap = true, silent = true })
+
+for _, d in ipairs({ "h", "j", "k", "l" }) do
+    vim.keymap.set("n", "<C-" .. d .. ">", "<C-w>" .. d, { noremap = true })
+end
