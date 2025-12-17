@@ -7,7 +7,7 @@ local opts = {
     sections = {
         lualine_a = { "mode" },
         lualine_b = { "branch", "diff" },
-        lualine_c = { "filename", "filesize" },
+        lualine_c = { { "filename", path = 1 }, "filesize" },
         lualine_x = {
             { "diagnostics", sources = { "nvim_diagnostic" } },
             "encoding",

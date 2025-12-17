@@ -27,11 +27,11 @@ zstyle ':completion:*' menu select
 # case insensitive (all), partial-word and substring completion
 : ${CASE_SENSITIVE:=false}
 : ${HYPHEN_INSENSITIVE:=false}
-if [[ "$CASE_SENSITIVE" = true ]]; then
+if [[ $CASE_SENSITIVE == true ]]; then
     zstyle ':completion:*' matcher-list 'r:|=*' 'l:|=* r:|=*'
 else
     local _hpat='m:{a-zA-Z}={A-Za-z}'
-    [[ "$HYPHEN_INSENSITIVE" = true ]] && _hpat='m:{a-zA-Z-_}={A-Za-z_-}'
+    [[ $HYPHEN_INSENSITIVE == true ]] && _hpat='m:{a-zA-Z-_}={A-Za-z_-}'
     zstyle ':completion:*' matcher-list "$_hpat" 'r:|=*' 'l:|=* r:|=*'
 fi
 unset CASE_SENSITIVE HYPHEN_INSENSITIVE
@@ -71,4 +71,4 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+eval "$(pyenv init - zsh)"

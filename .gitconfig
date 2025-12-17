@@ -7,11 +7,12 @@
     diffFilter = delta --color-only
 [delta]
     navigate = true
+    line-numbers = true
+    pager = less -R --mouse --wheel-lines=3
 [merge]
-    conflictstyle = diff3
+    conflictstyle = zdiff3
 [diff]
-    colorMoved = default
-    algorithm = histogram
+    algorithm = minimal
 [credential]
     helper = store
 [safe]

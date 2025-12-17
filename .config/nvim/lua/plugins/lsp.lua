@@ -1,3 +1,14 @@
+local function get_binary_path_list(binaries)
+    local path_list = {}
+    for _, binary in ipairs(binaries) do
+        local path = vim.fn.exepath(binary)
+        if path ~= "" then
+            table.insert(path_list, path)
+        end
+    end
+    return table.concat(path_list, ",")
+end
+
 return function()
     vim.api.nvim_create_autocmd("LspAttach", {
         group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -58,6 +69,8 @@ return function()
             "clangd",
             "-j=9",
             "--enable-config",
+            "--query-driver=" .. get_binary_path_list({ "clang++", "clang", "gcc", "g++", "nvcc" }),
+            "--compile-commands-dir=build",
             "--all-scopes-completion",
             "--background-index",
             "--clang-tidy",

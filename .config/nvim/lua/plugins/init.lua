@@ -49,6 +49,7 @@ require("lazy").setup({
         -- treesitter
         {
             "nvim-treesitter/nvim-treesitter",
+            branch = "master",
             build = ":TSUpdate",
             event = "BufReadPre",
             dependencies = {
@@ -123,6 +124,7 @@ require("lazy").setup({
         {
             "numToStr/Comment.nvim",
             event = { "CursorHold", "CursorHoldI" },
+            opts = {},
         },
 
         -- autoclose
@@ -136,6 +138,7 @@ require("lazy").setup({
         {
             "karb94/neoscroll.nvim",
             event = { "CursorHold", "CursorHoldI" },
+            opts = {},
         },
 
         -- accelerated-jk

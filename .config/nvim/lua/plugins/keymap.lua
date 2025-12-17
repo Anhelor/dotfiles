@@ -10,6 +10,7 @@ vim.keymap.set("n", "k", "<Plug>(accelerated_jk_gk)", opts)
 
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
+vim.keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<CR>", opts)
 
 vim.keymap.set("n", "<leader>fc", "<cmd>Neoformat<CR>", opts)
 vim.keymap.set("v", "<leader>fc", ":'<,'>Neoformat<CR>", opts)
