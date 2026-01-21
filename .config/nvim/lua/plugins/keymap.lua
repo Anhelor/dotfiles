@@ -15,6 +15,4 @@ vim.keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<CR>", opts)
 vim.keymap.set("n", "<leader>fc", "<cmd>Neoformat<CR>", opts)
 vim.keymap.set("v", "<leader>fc", ":'<,'>Neoformat<CR>", opts)
 
-vim.keymap.set({ "n", "t" }, "<leader>t", "<cmd>FloatermToggle<CR>", opts)
-
 vim.keymap.set("n", "<leader>sh", "<cmd>LspClangdSwitchSourceHeader<CR>", opts)

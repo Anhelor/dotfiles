@@ -85,14 +85,6 @@ require("lazy").setup({
             opts = { defaults = { layout_config = { horizontal = { preview_width = 0.618 } } } },
         },
 
-        -- floating terminal
-        {
-            "nvzone/floaterm",
-            cmd = "FloatermToggle",
-            dependencies = { "nvzone/volt" },
-            opts = { size = { h = 75, w = 90 } },
-        },
-
         -- completion
         {
             "hrsh7th/nvim-cmp",
