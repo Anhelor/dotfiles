@@ -1,17 +1,23 @@
-return function()
-    local has_words_before = function()
-        unpack = unpack or table.unpack
-        local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-        return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
-    end
+local M = {}
 
+local function has_words_before()
+    local unpack_fn = unpack or table.unpack
+    local line, col = unpack_fn(vim.api.nvim_win_get_cursor(0))
+    if col == 0 then
+        return false
+    end
+    local text = vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1] or ""
+    return text:sub(col, col):match("%s") == nil
+end
+
+function M.config()
     local luasnip = require("luasnip")
     local cmp = require("cmp")
 
     cmp.setup({
         snippet = {
             expand = function(args)
-                require("luasnip").lsp_expand(args.body)
+                luasnip.lsp_expand(args.body)
             end,
         },
         mapping = {
@@ -52,12 +58,10 @@ return function()
             { name = "nvim_lua" },
             { name = "luasnip" },
             { name = "path" },
-            {
-                name = "dictionary",
-                keyword_length = 2,
-                max_item_count = 10,
-            },
+            { name = "dictionary", keyword_length = 2, max_item_count = 10 },
             { name = "buffer" },
         },
     })
 end
+
+return M

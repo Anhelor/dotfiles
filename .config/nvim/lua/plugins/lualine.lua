@@ -1,3 +1,5 @@
+local M = {}
+
 local opts = {
     options = {
         theme = "catppuccin",
@@ -19,6 +21,8 @@ local opts = {
     },
 }
 
-return function()
+function M.config()
     require("lualine").setup(opts)
 end
+
+return M

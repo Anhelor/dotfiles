@@ -1,3 +1,5 @@
+local M = {}
+
 local function get_binary_path_list(binaries)
     local path_list = {}
     for _, binary in ipairs(binaries) do
@@ -9,17 +11,24 @@ local function get_binary_path_list(binaries)
     return table.concat(path_list, ",")
 end
 
-return function()
+function M.config()
     vim.api.nvim_create_autocmd("LspAttach", {
         group = vim.api.nvim_create_augroup("UserLspConfig", {}),
         callback = function(ev)
             vim.bo[ev.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
-            local opts = { buffer = ev.buf }
+            local opts = { buffer = ev.buf, silent = true }
+
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
             vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
             vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
             vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
             vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, opts)
+
+            local client = vim.lsp.get_client_by_id(ev.data.client_id)
+            if client and client.name == "clangd" then
+                vim.keymap.set("n", "<leader>sh", "<cmd>LspClangdSwitchSourceHeader<CR>", opts)
+                vim.keymap.set("n", "<leader>si", "<cmd>LspClangdShowSymbolInfo<CR>", opts)
+            end
         end,
     })
 
@@ -43,7 +52,7 @@ return function()
         settings = {
             Lua = {
                 diagnostics = {
-                    globals = { "vim" },
+                    globals = { "vim", "ev" },
                     disable = { "different-requires" },
                 },
                 workspace = {
@@ -86,3 +95,5 @@ return function()
     }
     vim.lsp.enable("clangd")
 end
+
+return M

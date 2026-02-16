@@ -15,12 +15,15 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+    defaults = { lazy = true },
+
     spec = {
         -- colorscheme
         {
             "catppuccin/nvim",
             name = "catppuccin",
-            lazy = false,
+            event = "VimEnter",
+            priority = 1000,
             config = function()
                 require("catppuccin").setup({ flavour = "mocha" })
                 vim.cmd.colorscheme("catppuccin")
@@ -30,15 +33,24 @@ require("lazy").setup({
         -- lualine
         {
             "nvim-lualine/lualine.nvim",
-            event = { "BufReadPost", "BufAdd", "BufNewFile" },
+            event = "VeryLazy",
             dependencies = { "nvim-tree/nvim-web-devicons" },
-            config = require("plugins.lualine"),
+            config = function()
+                require("plugins.lualine").config()
+            end,
         },
 
         -- bufferline
         {
             "akinsho/bufferline.nvim",
-            event = { "BufReadPost", "BufAdd", "BufNewFile" },
+            event = "VeryLazy",
+            keys = {
+                { "<Tab>", "<cmd>BufferLineCycleNext<CR>", mode = "n" },
+                { "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>", mode = "n" },
+                { "<leader>bp", "<cmd>BufferLinePick<CR>", mode = "n" },
+                { "<leader>bc", "<cmd>BufferLinePickClose<CR>", mode = "n" },
+            },
+            dependencies = { "nvim-tree/nvim-web-devicons" },
             config = function()
                 require("bufferline").setup({
                     highlights = require("catppuccin.special.bufferline").get_theme(),
@@ -49,14 +61,18 @@ require("lazy").setup({
         -- treesitter
         {
             "nvim-treesitter/nvim-treesitter",
-            branch = "master",
-            build = ":TSUpdate",
-            event = "BufReadPre",
+            branch = "main",
+            event = { "BufReadPre", "BufNewFile" },
+            build = function()
+                require("plugins.treesitter").build()
+            end,
+            config = function()
+                require("plugins.treesitter").config()
+            end,
             dependencies = {
-                { "nvim-treesitter/nvim-treesitter-textobjects" },
+                { "nvim-treesitter/nvim-treesitter-textobjects", branch = "main" },
                 { "hiphish/rainbow-delimiters.nvim" },
             },
-            config = require("plugins.treesitter"),
         },
 
         -- blankline
@@ -73,14 +89,21 @@ require("lazy").setup({
         -- lspconfig
         {
             "neovim/nvim-lspconfig",
-            event = { "BufReadPost", "BufAdd", "BufNewFile" },
-            config = require("plugins.lsp"),
+            event = { "BufReadPre", "BufNewFile" },
+            config = function()
+                require("plugins.lsp").config()
+            end,
         },
 
         -- telescope
         {
             "nvim-telescope/telescope.nvim",
             cmd = "Telescope",
+            keys = {
+                { "<leader>ff", "<cmd>Telescope find_files<CR>", mode = "n" },
+                { "<leader>fg", "<cmd>Telescope live_grep<CR>", mode = "n" },
+                { "<leader>fd", "<cmd>Telescope diagnostics<CR>", mode = "n" },
+            },
             dependencies = { "nvim-lua/plenary.nvim" },
             opts = { defaults = { layout_config = { horizontal = { preview_width = 0.618 } } } },
         },
@@ -109,13 +132,20 @@ require("lazy").setup({
                 { "onsails/lspkind-nvim" },
                 { "saadparwaiz1/cmp_luasnip" },
             },
-            config = require("plugins.cmp"),
+            config = function()
+                require("plugins.cmp").config()
+            end,
         },
 
         -- comment
         {
             "numToStr/Comment.nvim",
-            event = { "CursorHold", "CursorHoldI" },
+            keys = {
+                { "gc", mode = { "n", "v" } },
+                { "gcc", mode = "n" },
+                { "gb", mode = { "n", "v" } },
+                { "gbc", mode = "n" },
+            },
             opts = {},
         },
 
@@ -129,20 +159,32 @@ require("lazy").setup({
         -- neoscroll
         {
             "karb94/neoscroll.nvim",
-            event = { "CursorHold", "CursorHoldI" },
+            keys = {
+                { "<C-u>", mode = "n" },
+                { "<C-d>", mode = "n" },
+                { "<C-b>", mode = "n" },
+                { "<C-f>", mode = "n" },
+            },
             opts = {},
         },
 
         -- accelerated-jk
         {
             "rainbowhxch/accelerated-jk.nvim",
-            event = { "CursorHold", "CursorHoldI" },
+            keys = {
+                { "j", "<Plug>(accelerated_jk_gj)", mode = "n" },
+                { "k", "<Plug>(accelerated_jk_gk)", mode = "n" },
+            },
         },
 
         -- format code
         {
             "sbdchd/neoformat",
             cmd = "Neoformat",
+            keys = {
+                { "<leader>fc", "<cmd>Neoformat<CR>", mode = "n" },
+                { "<leader>fc", ":'<,'>Neoformat<CR>", mode = "v" },
+            },
             init = function()
                 vim.g.shfmt_opt = "-s"
             end,
@@ -151,11 +193,21 @@ require("lazy").setup({
         -- easymotion-like
         {
             "folke/flash.nvim",
-            event = { "CursorHold", "CursorHoldI" },
-            -- stylua: ignore
             keys = {
-                { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end },
-                { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end },
+                {
+                    "s",
+                    function()
+                        require("flash").jump()
+                    end,
+                    mode = { "n", "x", "o" },
+                },
+                {
+                    "S",
+                    function()
+                        require("flash").treesitter()
+                    end,
+                    mode = { "n", "x", "o" },
+                },
             },
         },
 
@@ -168,6 +220,27 @@ require("lazy").setup({
             end,
         },
     },
-})
 
-require("plugins.keymap")
+    performance = {
+        rtp = {
+            disabled_plugins = {
+                "editorconfig",
+                "gzip",
+                "man",
+                "matchit",
+                "matchparen",
+                "netrw",
+                "netrwPlugin",
+                "rplugin",
+                "shada",
+                "spellfile",
+                "tar",
+                "tarPlugin",
+                "tohtml",
+                "tutor",
+                "zip",
+                "zipPlugin",
+            },
+        },
+    },
+})
