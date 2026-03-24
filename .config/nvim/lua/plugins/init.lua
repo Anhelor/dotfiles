@@ -156,18 +156,6 @@ require("lazy").setup({
             opts = {},
         },
 
-        -- neoscroll
-        {
-            "karb94/neoscroll.nvim",
-            keys = {
-                { "<C-u>", mode = "n" },
-                { "<C-d>", mode = "n" },
-                { "<C-b>", mode = "n" },
-                { "<C-f>", mode = "n" },
-            },
-            opts = {},
-        },
-
         -- accelerated-jk
         {
             "rainbowhxch/accelerated-jk.nvim",
